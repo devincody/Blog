@@ -7,7 +7,7 @@ categories: ["RadioAstronomy", "FourierTransforms"]
 displayInMenu: false
 displayInList: true
 dropCap: true
-resources:
+Resources:
 - name: featuredImage
   src: "img/milkyway.webp"
   params:
@@ -15,7 +15,7 @@ resources:
 ---
 
 
-### Introduction to my Blog
+## Introduction to my Blog
 
 Hello and welcome to my blog! As this is my first post, I thought I’d quickly introduce myself before we delve into my introduction to interferometry. My name is Devin and I’m currently a graduate student at Caltech studying towards a master’s degree in Electrical Engineering. My primary interest is instrumentation. My passion is building hardware systems that allow us to better understand the world around us (e.g. radio telescopes, quantum circuits, sounding rockets). However, a lot of the work that I’ve done has been bringing these types of systems to life through software development, so I consider myself a bit of a mixed bag of skills and expertise.  If you’re interested in learning more about what I do or how I do it, please check out my website [here](http://www.devincody.com).
 
@@ -23,13 +23,13 @@ At Caltech, I’m working with Gregg Hallinan and Sandy Weinreb on a project cal
 
 Radio interferometry often comes off as a difficult concept, but it doesn’t need to be that way. In this blog post, I will attempt to give a more intuitive introduction to radio interferometry, one that, in particular, might help a budding radio engineer learn more about this fascinating field. I will assume knowledge of calculus, but everything else will be developed from the ground up. 
 
-### So What are Radio Interferometers?
+## So What are Radio Interferometers?
 
 ![Image of Interferometers](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/InterferometerswCap.PNG)
 
 By way of introduction to the topic of interferometry, I thought I'd show images of two radio interferometers (see fig. 0). Radio Interferometry is a method by which many distinct dishes (such as ALMA) or many distinct dipoles (such as the LWA) are used together to produce images of the radio sky. Although the earliest radio telescopes used single dishes, the majority of radio telescopes being built today are interferometers. This is because interferometers are generally able to produce higher-resolution and higher-sensitivity images than their single dish counter-parts.
 	
-### Starting with the Punchline
+## Starting with the Punchline
 	
   My plan is to start with the big punchline of radio interferometry and then work backwards to then justify everything else. So, are you ready for it? The big reveal? Ok, here it is: the most mind-blowing fact about radio astronomy is that instead of directly observing the sky, radio interferometers measure the **Fourier transform** of the sky. Slow down, don’t leave just yet, let’s take a minute to break this down. The Fourier transform is a method of taking a sequence of data which is represented in one way (i.e. a series of measurements over time, a signal coming from a sensor, or series of pixels across a spatial grid[^1]) and representing it in a different, but equally valid way. When you take the Fourier transform of some data, no information is lost. The data has simply been rearranged. Simultaneously, there exists a method by which we can take some data which has been Fourier transformed and undo the Fourier transform to recover the original data. This procedure is called the inverse Fourier transform. The important thing to take away from this, is that if we measure the Fourier transform of the sky with an interferometer, then we can reconstruct an map (image) of the sky brightness by taking the inverse Fourier transform of that data. But enough words, let’s look at some pictures.
 
@@ -41,7 +41,7 @@ By way of introduction to the topic of interferometry, I thought I'd show images
 	
   But how does an interferometer measure the Fourier transform of the sky? To answer this question, we will start by examining how the one-dimensional Fourier transform works. 
   
-### The (Discrete) Fourier Transform
+## The (Discrete) Fourier Transform
   
   At its core, the one-dimensional (Discrete[^3]) Fourier transform states that any signal, that is, any sequence of N data points (e.g. measurements of position, a stock’s value over time, or pixel intensities in a one-dimensional image) with regular spacing can be represented by (decomposed into) a sum of N/2+1 sines and N/2+1 cosines. 
 ![Decomposition Synthesis Relationship](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/DecompSynthwCap.png)
@@ -86,7 +86,7 @@ Let's now take a deeper look at the mechanics of correlation as used in the Four
 
 Fig. 4 shows the correlation of one input signal with two different test sinusoids. The test sinusoid on the left is a sine wave with frequency \\(k = 1\\) and amplitude 1 while the one on the right is a cosine with frequency \\(k = 2\\) and amplitude 1. As described in the correlation equation, we multiply all of the values in our sequence, \\(x\\), {{< raw >}}\((x[1], x[2], \cdots x[n]) \) {{</raw >}} with their corresponding values in the test sinusoid {{< raw >}}\( (y[1], y[2], \cdots y[n]) \) {{</raw >}}. The result of this multiplication is shown on the bottom for both of these test sinusoids. To complete the correlation, we sum all of the products together which gives us a single scalar value. Once we have done the above operation for a sine and cosine at each frequency, we will have all the information to write down the Fourier transform of the signal.
    
-### Correlation on the Sky: Putting it All Together
+## Correlation on the Sky: Putting it All Together
 
 Now that we've gotten a better understanding of the Fourier transform, We now have the tool we need to calculate the amplitudes of the sinusoids which exactly decompose our original signal. To recap, we simply correlate our original signal with a toolbox of test sinusoids (one sine and one cosine at each of the N/2+1 frequencies and then we can represent our signal as a sum of those same test sinusoids with a new amplitude. 
   
@@ -112,7 +112,7 @@ Fig. 6 shows the intermediary result after multiplication but before summation f
 
 Last, and most importantly, if we had many instruments each with a different test sinusoid beam pattern, then we’d be able to calculate the Fourier amplitudes for all of these sinusoids and exactly determine how the sky is represented in the Fourier domain[^6].
 
-### The Fringe Pattern
+## The Fringe Pattern
 
 ![Geometric origin of fringe pattern](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/AntGeometrywCap.png)
 
@@ -163,19 +163,14 @@ As if by magic, our test sinusoid is no longer distorted. Note that we restrict 
   
   Lastly, you may wonder how we can generate all the other test sinusoides. Notice that the spatial frequency (i.e. how rapidly the signal, R, peaks and dips as a function of \\(\hat{s}\\) of our test sinusoid is dependent on \\(\vec{b}\\), the length and direction[^11] of the baseline between the antennas. Therefore, although any given pair of antennas is only able to produce one baseline (assuming the antennas don’t move[^12]), we can add additional antennas to produce additional baselines and more test sinusoids[^13]. With a sufficient number of antennas, we will be able to complete our map of the sky in the Fourier domain, and then, using a computer, transform that data through the inverse Fourier transform to obtain the intensity sky mappings for which interferometry is so renowned.
   
-### Outro
+## Outro
   This completes my (hopefully) intuitive approach to interferometry. I hope you enjoy reading this as much as I enjoyed writing it. To maximize simplicity, I inevitably had to cut out many interesting and exciting (some might even say critical) aspects of interferometry. However, those details are recorded in greater depth and eloquence than I could ever hope to achieve in such texts as “Interferometry and Synthesis in Radio Astronomy” by A. Richard Thompson, James M. Moran, and George W. Swenson Jr. and “Essential Radio Astronomy” by James Justin Condon and Scott M. Ransom. I would also highly recommend “The Scientist and Engineer’s Guide to Digital Signal Processing” by Steven Smith, a book that was highly influential on my approach to the Fourier transform.
 
   Please feel free to leave a comment or connect with me about this post or anything else that I'm working on! You can reach me at: devin.cody@gmail.com
 
 
 
-### Notes
-See below for footnotes.
-
-### Comments
-
-{% include disqus.html %}
+## Notes
 
 
 [^1]: This is a potential trap for people who have used the the Fourier transform previously. Often the Fourier transform is introduced as a method of studying *temporal* variations which is a vaild way of understanding the Fourier transform. However, in astronomy, we are more interested in studying the *spatial* variations of a signal. As alluded to earier, this might be the brightness of an array of pixels or the compression of a spring as a function of position.
