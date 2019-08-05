@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LinearAlgebra - Devin Cody</title>
+    <link>http://example.org/categories/linearalgebra/</link>
+    <description>Recent content in LinearAlgebra on Devin Cody</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Apr 2019 23:31:24 -0700</lastBuildDate>
+    
+        <atom:link href="http://example.org/categories/linearalgebra/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra)</title>
+      <link>http://example.org/post/an_intuitive_interpretation_of_the_fourier_transform/</link>
+      <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
+      
+      <guid>http://example.org/post/an_intuitive_interpretation_of_the_fourier_transform/</guid>
+      <description>My objective in this post is to show a way of understanding the Fourier transform from a linear algebraic perspective. Once an appreciation for this connection is gained, many of the subtleties of the Fourier transform become almost obvious when observed through this lens</description>
+    </item>
+  </channel>
+</rss>

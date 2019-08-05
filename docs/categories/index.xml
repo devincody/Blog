@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories - Devin Cody</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on Devin Cody</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Apr 2019 23:31:24 -0700</lastBuildDate>
+    
+        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FourierTransforms</title>
+      <link>http://example.org/categories/fouriertransforms/</link>
+      <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
+      
+      <guid>http://example.org/categories/fouriertransforms/</guid>
+      <description></description>
+    </item><item>
+      <title>LinearAlgebra</title>
+      <link>http://example.org/categories/linearalgebra/</link>
+      <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
+      
+      <guid>http://example.org/categories/linearalgebra/</guid>
+      <description></description>
+    </item><item>
+      <title>RadioAstronomy</title>
+      <link>http://example.org/categories/radioastronomy/</link>
+      <pubDate>Tue, 27 Feb 2018 17:40:12 -0700</pubDate>
+      
+      <guid>http://example.org/categories/radioastronomy/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

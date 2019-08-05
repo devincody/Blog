@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RadioAstronomy - Devin Cody</title>
+    <link>http://example.org/categories/radioastronomy/</link>
+    <description>Recent content in RadioAstronomy on Devin Cody</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Feb 2018 17:40:12 -0700</lastBuildDate>
+    
+        <atom:link href="http://example.org/categories/radioastronomy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to Interferometry</title>
+      <link>http://example.org/post/intro_to_intererometry/</link>
+      <pubDate>Tue, 27 Feb 2018 17:40:12 -0700</pubDate>
+      
+      <guid>http://example.org/post/intro_to_intererometry/</guid>
+      <description>Radio interferometry often comes off as a difficult concept, but it doesn’t need to be that way. In this blog post, I will attempt to give a more intuitive introduction to radio interferometry, one that, in particular, might help a budding radio engineer learn more about this fascinating field.</description>
+    </item>
+  </channel>
+</rss>
