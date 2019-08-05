@@ -248,27 +248,3 @@ See below for footnotes.
 [^5]: Remember that for complex-valued vectors, the inner product requires the conjugation of one of the vectors. 
 [^6]: See for instance, "Mathematical Methods in the Physical Sciences", Boaz.
 [^7]: I decided to use the unitary version of the Fourier transform since it helps stress the symmetry of the forward and inverse Fourier transforms. Further discussion of the scaling conventions can be found on Wikipedia's page on the [DFT matrix](https://en.wikipedia.org/wiki/DFT_matrix). 
-
-
-
-\\(\vec{b}\\): https://latex.codecogs.com/gif.latex?\vec{b} \\(\vec{b}\\)
-\\(\vec{g}\\): https://latex.codecogs.com/gif.latex?\vec{g} \\(\vec{g}\\)
-\\(\vec{z}\\): https://latex.codecogs.com/gif.latex?\vec{z} \\(\vec{z}\\)
-\\(\vec{x}\\): https://latex.codecogs.com/gif.latex?\vec{x} \\(\vec{x}\\)
-\\(X[k]\\): https://latex.codecogs.com/gif.latex?X[k] \\(X[k]\\)
-\\(x[n]\\): https://latex.codecogs.com/gif.latex?x[n] \\(x[n]\\)
-\\(\vec{z} = (x,y)\\): https://latex.codecogs.com/gif.latex?\vec{z}=(x,y) \\(\vec{z} = (x,y)\\)
-\\(\hat{e_1}\\): https://latex.codecogs.com/gif.latex?\hat{e_1} \\(\hat{e_1}\\)
-\\(\hat{e_2}\\): https://latex.codecogs.com/gif.latex?\hat{e_2} \\(\hat{e_2}\\)
-\\((a, b)^T\\): https://latex.codecogs.com/gif.latex?(a,b)^T \\((a, b)^T\\)
-\\(k_1 \eq k_2\\): https://latex.codecogs.com/gif.latex?k_1&space;\eq&space;k_2 \\(k_1 \eq k_2\\)
-\\(k_1 \neq k_2\\): https://latex.codecogs.com/gif.latex?k_2&space;\neq&space;k_2 \\(k_1 \neq k_2\\)
-\\(k_1 - k_2\\): https://latex.codecogs.com/gif.latex?k_1-k_2 \\(k_1 - k_2\\)
-\\(e^{i2pi (k1-k2)}\\): https://latex.codecogs.com/gif.latex?e^{i2pi(k1-k2)} \\(e^{i2pi (k1-k2)}\\)
-\\(\theta\\): https://latex.codecogs.com/gif.latex?\theta \\(\theta\\)
-\\(O(N^3)\\): https://latex.codecogs.com/gif.latex?O(N^3) \\(O(N^3)\\)
-\\(A^TA=I\\): https://latex.codecogs.com/gif.latex?A^TA=I \\(A^TA=I\\)
-\\(\mathfrak{F}[k,i]\\): https://latex.codecogs.com/gif.latex?\mathfrak{F}[k,i] \\(\mathfrak{F}[k,i]\\)
-\\(\left\langle\cdot,\cdot\right\rangle\\): https://latex.codecogs.com/gif.latex?\left\langle\cdot,\cdot\right\rangle \\(\left\langle\cdot,\cdot\right\rangle\\)
-\\(\sqrt{N}\\): https://latex.codecogs.com/gif.latex?\sqrt{N} \\(\sqrt{N}\\)
-\\(\frac{1}{\sqrt{N}}\\): https://latex.codecogs.com/gif.latex?\frac{1}{sqrt{N}} \\(\frac{1}{\sqrt{N}}\\)

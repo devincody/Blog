@@ -2,15 +2,16 @@ baseURL = "https://devincody.github.io/BlogAether/"
 languageCode = "en-us"
 author="Devin Cody"
 title = "Devin Cody"
-theme="aether"
+theme="Aether"
 paginate = 5
 math = true
 disqusShortname = "https-devincody-github-io-blog"
 publishDir = "docs"
+canonifyurls = true
 
 [params]
 brand = "The Blog"
 description = "This space will be used to discuss engineering, science, and programming. More info to come."
 bgimg = "https://www.tollivalerio.space/img/cream_pixels.png"
-homeimg = "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC8wNzYvb3JpZ2luYWwvbWlsa3ktd2F5LXR3aXN0LmpwZw=="
+homeimg = "img/milkyway.webp"
 siteFooter = "true"

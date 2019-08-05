@@ -9,7 +9,7 @@ displayInList: true
 dropCap: true
 resources:
 - name: featuredImage
-  src: "img/Milkyway3.jpg"
+  src: "img/milkyway.webp"
   params:
     description: "Description for the featured image, used as the alt text"
 ---

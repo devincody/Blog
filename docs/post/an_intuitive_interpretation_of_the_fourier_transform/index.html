@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra) &middot; Devin Cody</title>
   <meta name="description" content="My objective in this post is to show a way of understanding the Fourier transform from a linear algebraic perspective. Once an appreciation for this connection is gained, many of the subtleties of the Fourier transform become almost obvious when observed through this lens" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://devincody.github.io/BlogAether/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://devincody.github.io/BlogAether/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://devincody.github.io/BlogAether/favicon-16x16.png">
+  <link rel="manifest" href="https://devincody.github.io/BlogAether/site.webmanifest">
+  <link rel="mask-icon" href="https://devincody.github.io/BlogAether/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -267,28 +272,6 @@ $$\mathfrak{F} = \frac{1}{\sqrt{N}}\begin{bmatrix} e^{-i2\pi 0 \frac{0}{N}} & e^
 <h2 id="comments">Comments</h2>
 
 <p>{% include disqus.html %}</p>
-
-<p>\(\vec{b}\): <a href="https://latex.codecogs.com/gif.latex?vec{b">https://latex.codecogs.com/gif.latex?vec{b</a>} \(\vec{b}\)
-\(\vec{g}\): <a href="https://latex.codecogs.com/gif.latex?vec{g">https://latex.codecogs.com/gif.latex?vec{g</a>} \(\vec{g}\)
-\(\vec{z}\): <a href="https://latex.codecogs.com/gif.latex?vec{z">https://latex.codecogs.com/gif.latex?vec{z</a>} \(\vec{z}\)
-\(\vec{x}\): <a href="https://latex.codecogs.com/gif.latex?vec{x">https://latex.codecogs.com/gif.latex?vec{x</a>} \(\vec{x}\)
-\(X[k]\): <a href="https://latex.codecogs.com/gif.latex?X[k">https://latex.codecogs.com/gif.latex?X[k</a>] \(X[k]\)
-\(x[n]\): <a href="https://latex.codecogs.com/gif.latex?x[n">https://latex.codecogs.com/gif.latex?x[n</a>] \(x[n]\)
-\(\vec{z} = (x,y)\): <a href="https://latex.codecogs.com/gif.latex?vec{z}=(x,y">https://latex.codecogs.com/gif.latex?vec{z}=(x,y</a>) \(\vec{z} = (x,y)\)
-\(\hat{e_1}\): <a href="https://latex.codecogs.com/gif.latex?hat{e_1">https://latex.codecogs.com/gif.latex?hat{e_1</a>} \(\hat{e_1}\)
-\(\hat{e_2}\): <a href="https://latex.codecogs.com/gif.latex?hat{e_2">https://latex.codecogs.com/gif.latex?hat{e_2</a>} \(\hat{e_2}\)
-\((a, b)^T\): <a href="https://latex.codecogs.com/gif.latex?(a,b)^T">https://latex.codecogs.com/gif.latex?(a,b)^T</a> \((a, b)^T\)
-\(k_1 \eq k_2\): <a href="https://latex.codecogs.com/gif.latex?k_1&space;eq&space;k_2">https://latex.codecogs.com/gif.latex?k_1&space;eq&space;k_2</a> \(k_1 \eq k_2\)
-\(k_1 \neq k_2\): <a href="https://latex.codecogs.com/gif.latex?k_2&space;neq&space;k_2">https://latex.codecogs.com/gif.latex?k_2&space;neq&space;k_2</a> \(k_1 \neq k_2\)
-\(k_1 - k_2\): <a href="https://latex.codecogs.com/gif.latex?k_1-k_2">https://latex.codecogs.com/gif.latex?k_1-k_2</a> \(k_1 - k_2\)
-\(e^{i2pi (k1-k2)}\): <a href="https://latex.codecogs.com/gif.latex?e^{i2pi(k1-k2)">https://latex.codecogs.com/gif.latex?e^{i2pi(k1-k2)</a>} \(e^{i2pi (k1-k2)}\)
-\(\theta\): <a href="https://latex.codecogs.com/gif.latex?theta">https://latex.codecogs.com/gif.latex?theta</a> \(\theta\)
-\(O(N^3)\): <a href="https://latex.codecogs.com/gif.latex?O(N^3">https://latex.codecogs.com/gif.latex?O(N^3</a>) \(O(N^3)\)
-\(A^TA=I\): <a href="https://latex.codecogs.com/gif.latex?A^TA=I">https://latex.codecogs.com/gif.latex?A^TA=I</a> \(A^TA=I\)
-\(\mathfrak{F}[k,i]\): <a href="https://latex.codecogs.com/gif.latex?mathfrak{F}[k,i">https://latex.codecogs.com/gif.latex?mathfrak{F}[k,i</a>] \(\mathfrak{F}[k,i]\)
-\(\left\langle\cdot,\cdot\right\rangle\): <a href="https://latex.codecogs.com/gif.latex?leftlanglecdot,cdotrightrangle">https://latex.codecogs.com/gif.latex?leftlanglecdot,cdotrightrangle</a> \(\left\langle\cdot,\cdot\right\rangle\)
-\(\sqrt{N}\): <a href="https://latex.codecogs.com/gif.latex?sqrt{N">https://latex.codecogs.com/gif.latex?sqrt{N</a>} \(\sqrt{N}\)
-\(\frac{1}{\sqrt{N}}\): <a href="https://latex.codecogs.com/gif.latex?frac{1}{sqrt{N}">https://latex.codecogs.com/gif.latex?frac{1}{sqrt{N}</a>} \(\frac{1}{\sqrt{N}}\)</p>
 <div class="footnotes">
 
 <hr />
@@ -349,7 +332,7 @@ $$\mathfrak{F} = \frac{1}{\sqrt{N}}\begin{bmatrix} e^{-i2\pi 0 \frac{0}{N}} & e^
 </a>
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://devincody.github.io/BlogAether/" class="card home-card" style="background-image: url( https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC8wNzYvb3JpZ2luYWwvbWlsa3ktd2F5LXR3aXN0LmpwZw== )" rel="bookmark" >
+  href="https://devincody.github.io/BlogAether/" class="card home-card" style="background-image: url( https://devincody.github.io/BlogAether/img/milkyway.webp )" rel="bookmark" >
   Home
 </a>
     </nav>
