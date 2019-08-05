@@ -3,53 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/an_intuitive_interpretation_of_the_fourier_transform/</loc>
+    <loc>https://devincody.github.io/BlogAether/post/an_intuitive_interpretation_of_the_fourier_transform/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
-    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/fouriertransforms/</loc>
+    <loc>https://devincody.github.io/BlogAether/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/linearalgebra/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/fouriertransforms/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/linearalgebra/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/intro_to_intererometry/</loc>
+    <loc>https://devincody.github.io/BlogAether/post/</loc>
+    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/BlogAether/post/intro_to_intererometry/</loc>
     <lastmod>2018-02-27T17:40:12-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/radioastronomy/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/radioastronomy/</loc>
     <lastmod>2018-02-27T17:40:12-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://devincody.github.io/BlogAether/tags/</loc>
     <priority>0</priority>
   </url>
   
