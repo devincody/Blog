@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/</loc>
+    <loc>https://devincody.github.io/Blog/</loc>
     <lastmod>2019-08-05T17:40:12-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/about/</loc>
+    <loc>https://devincody.github.io/Blog/about/</loc>
     <lastmod>2019-08-05T17:40:12-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/post/an_intuitive_interpretation_of_the_fourier_transform/</loc>
+    <loc>https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/</loc>
-    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devincody.github.io/BlogAether/categories/fourier-transforms/</loc>
+    <loc>https://devincody.github.io/Blog/categories/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/linear-algebra/</loc>
+    <loc>https://devincody.github.io/Blog/categories/fourier-transforms/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/post/</loc>
+    <loc>https://devincody.github.io/Blog/categories/linear-algebra/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/post/introduction_to_radio_interferometry/</loc>
+    <loc>https://devincody.github.io/Blog/post/</loc>
+    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/</loc>
     <lastmod>2018-02-27T17:40:12-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/radio-astronomy/</loc>
+    <loc>https://devincody.github.io/Blog/categories/radio-astronomy/</loc>
     <lastmod>2018-02-27T17:40:12-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/tags/</loc>
+    <loc>https://devincody.github.io/Blog/tags/</loc>
     <priority>0</priority>
   </url>
   

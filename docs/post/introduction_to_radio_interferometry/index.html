@@ -6,38 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Introduction to Radio Interferometry &middot; Devin Cody</title>
   <meta name="description" content="Radio interferometry often comes off as a difficult concept, but it doesn’t need to be that way. In this blog post, I will attempt to give a more intuitive introduction to radio interferometry, one that, in particular, might help a budding radio engineer learn more about this fascinating field." />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://devincody.github.io/BlogAether/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://devincody.github.io/BlogAether/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://devincody.github.io/BlogAether/favicon-16x16.png">
-  <link rel="manifest" href="https://devincody.github.io/BlogAether/site.webmanifest">
-  <link rel="mask-icon" href="https://devincody.github.io/BlogAether/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://devincody.github.io/Blog/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://devincody.github.io/Blog/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://devincody.github.io/Blog/favicon-16x16.png">
+  <link rel="manifest" href="https://devincody.github.io/Blog/site.webmanifest">
+  <link rel="mask-icon" href="https://devincody.github.io/Blog/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
   
   
   
-  <link href="https://devincody.github.io/BlogAether/css/concated.min.css" rel="stylesheet">
+  <link href="https://devincody.github.io/Blog/css/concated.min.css" rel="stylesheet">
   
   <style>
     body {
-      background: #ecedef url("https://devincody.github.io/BlogAether/img/cream_pixels.png") repeat;
+      background: #ecedef url("https://devincody.github.io/Blog/img/cream_pixels.png") repeat;
     }
   </style>
 </head>
 
   <body class="single-body">
     <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://devincody.github.io/BlogAether/" class="nav-text">The Blog</a></h1>
+  <h1 class="nav-header"><a href="https://devincody.github.io/Blog/" class="nav-text">The Blog</a></h1>
   <div class="hamburger-menu">
     <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
       <span></span>
       <span></span>
     </button>
     <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://devincody.github.io/BlogAether/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://devincody.github.io/BlogAether/about/" class="hamburger-menu-overlay-link">Welcome to My Blog!</a></li>
-      <li><a href="https://devincody.github.io/BlogAether/categories/fourier-transforms" class="hamburger-menu-overlay-link">Fourier transforms</a></li><li><a href="https://devincody.github.io/BlogAether/categories/linear-algebra" class="hamburger-menu-overlay-link">Linear algebra</a></li><li><a href="https://devincody.github.io/BlogAether/categories/radio-astronomy" class="hamburger-menu-overlay-link">Radio astronomy</a></li>
+      <li><a href="https://devincody.github.io/Blog/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://devincody.github.io/Blog/about/" class="hamburger-menu-overlay-link">Welcome to My Blog!</a></li>
+      <li><a href="https://devincody.github.io/Blog/categories/fourier-transforms" class="hamburger-menu-overlay-link">Fourier transforms</a></li><li><a href="https://devincody.github.io/Blog/categories/linear-algebra" class="hamburger-menu-overlay-link">Linear algebra</a></li><li><a href="https://devincody.github.io/Blog/categories/radio-astronomy" class="hamburger-menu-overlay-link">Radio astronomy</a></li>
       
     </ul>
   </div>
@@ -53,8 +53,8 @@
         <picture class="post-figure">
           
           
-          <source srcset="https://devincody.github.io/BlogAether/post/introduction_to_radio_interferometry/Milkyway%20Nitika%20DSA%20Wide_hu9318af9b19d3a2e6da2daabdedaecbf2_19041292_800x0_resize_q75_lanczos.jpg">
-          <img src="https://devincody.github.io/BlogAether/post/introduction_to_radio_interferometry/Milkyway%20Nitika%20DSA%20Wide_hu9318af9b19d3a2e6da2daabdedaecbf2_19041292_800x0_resize_q75_lanczos.jpg" alt="The Deep Synoptic Array (DSA) in Owens Valley, CA">
+          <source srcset="https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/Milkyway%20Nitika%20DSA%20Wide_hu9318af9b19d3a2e6da2daabdedaecbf2_19041292_800x0_resize_q75_lanczos.jpg">
+          <img src="https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/Milkyway%20Nitika%20DSA%20Wide_hu9318af9b19d3a2e6da2daabdedaecbf2_19041292_800x0_resize_q75_lanczos.jpg" alt="The Deep Synoptic Array (DSA) in Owens Valley, CA">
         </picture>
         
         
@@ -268,7 +268,7 @@ $$ R(\tau_g) = \langle V_{12} \rangle = \frac{V^2}{2} \cos(\omega \tau_g) $$
     <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://devincody.github.io/BlogAether/" class="card home-card" style="background-image: url( https://devincody.github.io/BlogAether/img/milkyway.webp )" rel="bookmark" >
+  href="https://devincody.github.io/Blog/" class="card home-card" style="background-image: url( https://devincody.github.io/Blog/img/milkyway.webp )" rel="bookmark" >
   Home
 </a>
     </nav>
@@ -277,7 +277,7 @@ $$ R(\tau_g) = \langle V_{12} \rangle = \frac{V^2}{2} \cos(\omega \tau_g) $$
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
   
-  <script src="https://devincody.github.io/BlogAether/js/core.min.js"></script>
+  <script src="https://devincody.github.io/Blog/js/core.min.js"></script>
 <script>
   hljs.initHighlightingOnLoad();
 </script>

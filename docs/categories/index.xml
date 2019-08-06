@@ -1,34 +1,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories - Devin Cody</title>
-    <link>https://devincody.github.io/BlogAether/categories/</link>
+    <link>https://devincody.github.io/Blog/categories/</link>
     <description>Recent content in Categories on Devin Cody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Apr 2019 23:31:24 -0700</lastBuildDate>
     
-        <atom:link href="https://devincody.github.io/BlogAether/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://devincody.github.io/Blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Fourier-Transforms</title>
-      <link>https://devincody.github.io/BlogAether/categories/fourier-transforms/</link>
+      <link>https://devincody.github.io/Blog/categories/fourier-transforms/</link>
       <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
       
-      <guid>https://devincody.github.io/BlogAether/categories/fourier-transforms/</guid>
+      <guid>https://devincody.github.io/Blog/categories/fourier-transforms/</guid>
       <description></description>
     </item><item>
       <title>Linear-Algebra</title>
-      <link>https://devincody.github.io/BlogAether/categories/linear-algebra/</link>
+      <link>https://devincody.github.io/Blog/categories/linear-algebra/</link>
       <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
       
-      <guid>https://devincody.github.io/BlogAether/categories/linear-algebra/</guid>
+      <guid>https://devincody.github.io/Blog/categories/linear-algebra/</guid>
       <description></description>
     </item><item>
       <title>Radio-Astronomy</title>
-      <link>https://devincody.github.io/BlogAether/categories/radio-astronomy/</link>
+      <link>https://devincody.github.io/Blog/categories/radio-astronomy/</link>
       <pubDate>Tue, 27 Feb 2018 17:40:12 -0700</pubDate>
       
-      <guid>https://devincody.github.io/BlogAether/categories/radio-astronomy/</guid>
+      <guid>https://devincody.github.io/Blog/categories/radio-astronomy/</guid>
       <description></description>
     </item>
   </channel>
