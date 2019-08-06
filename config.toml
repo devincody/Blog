@@ -2,8 +2,7 @@ baseURL = "https://devincody.github.io/BlogAether/"
 languageCode = "en-us"
 author="Devin Cody"
 title = "Devin Cody"
-description = "Engineering, science, and programming. More info to come."
-
+description = "Engineering, science, and programming"
 theme="Aether"
 paginate = 5
 math = true
@@ -11,8 +10,10 @@ disqusShortname = "https-devincody-github-io-blog"
 publishDir = "docs"
 canonifyurls = true
 
+
 [params]
 brand = "The Blog"
 bgimg = "img/cream_pixels.png"
 homeimg = "img/milkyway.webp"
-siteFooter = "true"
+siteFooter = true
+description = "Engineering, science, and programming"
