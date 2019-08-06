@@ -5,13 +5,14 @@ description: "My objective in this post is to show a way of understanding the Fo
 dropCap: true
 displayInMenu: false
 displayInList: true
-categories: ["Linear Algebra", "Fourier Transforms"]
+categories:
+tags: ["Linear Algebra", "Fourier Transforms"]
 draft: false
 Resources:
 - name: featuredImage
   src: "FFT-Time-Frequency-View.png"
   params:
-    description: "The Deep Synoptic Array (DSA) in Owens Valley, CA"
+    description: "The Fourier transform in time and frequency domains"
 ---
 
 
