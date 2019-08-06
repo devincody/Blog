@@ -20,13 +20,13 @@
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/fouriertransforms/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/fourier-transforms/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/linearalgebra/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/linear-algebra/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -34,6 +34,12 @@
   <url>
     <loc>https://devincody.github.io/BlogAether/post/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/BlogAether/categories/fouriertransforms/</loc>
+    <lastmod>2018-02-27T17:40:12-07:00</lastmod>
     <priority>0</priority>
   </url>
   

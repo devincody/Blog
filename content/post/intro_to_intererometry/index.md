@@ -9,7 +9,7 @@ displayInList: true
 dropCap: true
 resources:
 - name: featuredImage
-  src: "FFT-Time-Frequency-View.png"
+  src: "Milkyway Nitika DSA Wide.jpg"
   params:
     description: "Description for the featured image, used as the alt text"
 ---

@@ -2,17 +2,16 @@
 title: "An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra)"
 date: 2019-04-06T23:31:24-07:00
 description: "My objective in this post is to show a way of understanding the Fourier transform from a linear algebraic perspective. Once an appreciation for this connection is gained, many of the subtleties of the Fourier transform become almost obvious when observed through this lens"
-categories: []
-dropCap: false
+dropCap: true
 displayInMenu: false
 displayInList: true
 categories: ["Linear Algebra", "Fourier Transforms"]
 draft: false
-resources:
+Resources:
 - name: featuredImage
-  src: "Milkyway Nitika DSA Wide.jpg"
+  src: "FFT-Time-Frequency-View.png"
   params:
-    description: ""
+    description: "The Deep Synoptic Array (DSA) in Owens Valley, CA"
 ---
 
 
@@ -232,14 +231,6 @@ For example, I could never figure out why after all these summations (or integra
 As a more advanced example, I also like the intutition that this approach gives Parseval's theorem. Which states that the time domain and frequency domain representations contain equal amounts of power. Because the Fourier transform matrix is unitary (orthonormal), the "length" of the input vector is not changed when converting from the time to frequency bases. Since length-squared is proportional to power for signals, the fact that the lengths are the same mean that the power contained by the representations is also the same!
 
 Furthermore, the results that we’ve derived here are applicable to the various other versions of the Fourier transform (e.g. continuous time, 2D, 3D, etc.). Unfortunately, those derivations are up to you. While the reduction of the Fourier transform to a matrix multiplication is only valid for discrete Fourier transform, many of the other statements still hold. Most importantly, we can think of any of the other Fourier transforms as projections of time-domain signals onto the Fourier basis with the appropriate frequencies.
-
-## Notes
-See below for footnotes.
-
-## Comments
-
-{% include disqus.html %}
-
 
 [^1]: As it turns out, this blog might have the unintended consequence of elucidating certain subtleties of linear algebra as well. It certainly did for me!
 [^2]: Linear operations are ones that can be expressed as a matrix multiplication with the vector of inputs.

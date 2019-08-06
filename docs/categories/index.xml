@@ -10,18 +10,25 @@
         <atom:link href="https://devincody.github.io/BlogAether/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>FourierTransforms</title>
-      <link>https://devincody.github.io/BlogAether/categories/fouriertransforms/</link>
+      <title>Fourier Transforms</title>
+      <link>https://devincody.github.io/BlogAether/categories/fourier-transforms/</link>
       <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
       
-      <guid>https://devincody.github.io/BlogAether/categories/fouriertransforms/</guid>
+      <guid>https://devincody.github.io/BlogAether/categories/fourier-transforms/</guid>
       <description></description>
     </item><item>
-      <title>LinearAlgebra</title>
-      <link>https://devincody.github.io/BlogAether/categories/linearalgebra/</link>
+      <title>Linear Algebra</title>
+      <link>https://devincody.github.io/BlogAether/categories/linear-algebra/</link>
       <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
       
-      <guid>https://devincody.github.io/BlogAether/categories/linearalgebra/</guid>
+      <guid>https://devincody.github.io/BlogAether/categories/linear-algebra/</guid>
+      <description></description>
+    </item><item>
+      <title>FourierTransforms</title>
+      <link>https://devincody.github.io/BlogAether/categories/fouriertransforms/</link>
+      <pubDate>Tue, 27 Feb 2018 17:40:12 -0700</pubDate>
+      
+      <guid>https://devincody.github.io/BlogAether/categories/fouriertransforms/</guid>
       <description></description>
     </item><item>
       <title>RadioAstronomy</title>
