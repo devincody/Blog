@@ -10,7 +10,7 @@ displayInList: true
 draft: false
 Resources:
 - name: featuredImage
-  src: "FFT-Time-Frequency-View.png"
+  src: "img/FFT-Time-Frequency-View.png"
   params:
     description: "The Fourier transform in time and frequency domains"
 
@@ -44,7 +44,7 @@ An implicit assumption of linear algebra is that each number in a vector has som
 
 Note, however, the x, y, and z axes are not always the most convenient axes for expressing the vector. Consider the following vectors:
 
-![Original Vectors](https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/originalvectors.PNG)
+{{<image src="img/originalvectors.PNG" alt="Figure 0: Example Vectors">}}
 
 
 Figure 1: Four two-dimensional vectors in the “standard” basis. Notice that the red vector is aligned with the “standard” basis while the other three are not aligned with either axis.
@@ -59,7 +59,7 @@ The first thing to notice here is that the red vector’s representation is simp
 
 With this in mind, we might ask: “can we rotate these vectors such that we can align more of the vectors with the underlying axes (i.e. get more zeros)?”. Indeed, we can! If we rotate the above vectors clockwise by 45 degrees, we find that three out of the four vectors have “simpler” representations:
 
-![Rotated Vectors](https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/rotatedvectors.PNG)
+{{<image src="img/rotatedvectors.PNG" alt="Figure 1: Rotated Vectors">}}
 
 When written out:
 
@@ -96,7 +96,7 @@ we want to express every possible vector as a combination of the new basis vecto
 
 Visually, the new vectors are given by the blue vectors below:
 
-![Rotation basis vectors](https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/rotationbasisvectors.PNG)
+{{<image src="img/rotationbasisvectors.PNG" alt="Figure 2: Rotation of basis vectors]">}}
 
 The key question now is: how do we find the representation of any vector, \\(\vec{z} = (x,y)\\) with the new vectors? Put another way, we need to find how much of each of the new basis vectors are needed for \\(\vec{z}\\). Mathematically, we need to solve the following equation for a and b:
 
@@ -146,7 +146,7 @@ where k is our “frequency” index and n is our “time” index. As we are ab
 
 Because there’s a lot going on in this equation, let’s make things more concrete by considering the case where N = 18. Fig. 3 shows four of the eighteen possible sinusoids. 
 
-![Fouier transform basis vectors](https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/sinusoidalbasisvectors.PNG)
+{{<image src="img/sinusoidalbasisvectors.PNG" alt="Figure 3: Fourier Transform basis vectors]">}}
 
 For those of you wondering what happened to the N/2 + 1 sines and N/2 + 1 cosines used in most traditional introductions of the Fourier transform (such as the one I gave in my last blog post), it turns out that these two representations are equivalent due to Euler’s formula
 
@@ -198,7 +198,7 @@ The next step is to project our length-N signal \\(\vec{x}\\) onto this Fourier 
 
 Expressed mathematically:
 
-![Fouier transform matrix](https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/fouriertransformmatrix.PNG)
+{{<image src="img/fouriertransformmatrix.PNG" alt="Fourier transform matrix">}}
 
 The above matrix can be confusing, so I find that it’s best to think of the matrix as a collection of columns where for each column corresponds to a different k. Furthermore, it’s worthwhile to remember that we already plotted what the columns should look like in fig 3.
 

@@ -53,8 +53,8 @@
         <picture class="post-figure">
           
           
-          <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/FFT-Time-Frequency-View_hu24c1c8fe894ecd0dad24174b2bed08c9_99850_800x0_resize_lanczos_2.png">
-          <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/FFT-Time-Frequency-View_hu24c1c8fe894ecd0dad24174b2bed08c9_99850_800x0_resize_lanczos_2.png" alt="The Fourier transform in time and frequency domains">
+          <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/FFT-Time-Frequency-View_hu24c1c8fe894ecd0dad24174b2bed08c9_99850_800x0_resize_lanczos_2.png">
+          <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/FFT-Time-Frequency-View_hu24c1c8fe894ecd0dad24174b2bed08c9_99850_800x0_resize_lanczos_2.png" alt="The Fourier transform in time and frequency domains">
         </picture>
         
         
@@ -85,7 +85,14 @@
 
 <p>Note, however, the x, y, and z axes are not always the most convenient axes for expressing the vector. Consider the following vectors:</p>
 
-<p><img src="https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/originalvectors.PNG" alt="Original Vectors" /></p>
+<picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/originalvectors_hu68f6239cc86d1fd2c61db81071563f88_144173_800x0_resize_lanczos_2.PNG">
+        <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/originalvectors_hu68f6239cc86d1fd2c61db81071563f88_144173_800x0_resize_lanczos_2.PNG" alt="Figure 0: Example Vectors">
+    
+</picture>
 
 <p>Figure 1: Four two-dimensional vectors in the “standard” basis. Notice that the red vector is aligned with the “standard” basis while the other three are not aligned with either axis.</p>
 
@@ -99,7 +106,14 @@ $$\vec{r} = \begin{bmatrix}1 \\ 0\end{bmatrix}, \vec{b} = \frac{1}{\sqrt{2}}\beg
 
 <p>With this in mind, we might ask: “can we rotate these vectors such that we can align more of the vectors with the underlying axes (i.e. get more zeros)?”. Indeed, we can! If we rotate the above vectors clockwise by 45 degrees, we find that three out of the four vectors have “simpler” representations:</p>
 
-<p><img src="https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/rotatedvectors.PNG" alt="Rotated Vectors" /></p>
+<picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/rotatedvectors_hu6f81630f6c4f48b85d0168ce543cb539_189758_800x0_resize_lanczos_2.PNG">
+        <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/rotatedvectors_hu6f81630f6c4f48b85d0168ce543cb539_189758_800x0_resize_lanczos_2.PNG" alt="Figure 1: Rotated Vectors">
+    
+</picture>
 
 <p>When written out:</p>
 
@@ -135,7 +149,14 @@ $$\hat{e_1} = \begin{bmatrix} 1 \\ 0\end{bmatrix}, \hat{e_2} = \begin{bmatrix} 0
 
 <p>Visually, the new vectors are given by the blue vectors below:</p>
 
-<p><img src="https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/rotationbasisvectors.PNG" alt="Rotation basis vectors" /></p>
+<picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/rotationbasisvectors_hu911c874fc67dfd3178f5f467980efc5c_186311_800x0_resize_lanczos_2.PNG">
+        <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/rotationbasisvectors_hu911c874fc67dfd3178f5f467980efc5c_186311_800x0_resize_lanczos_2.PNG" alt="Figure 2: Rotation of basis vectors]">
+    
+</picture>
 
 <p>The key question now is: how do we find the representation of any vector, \(\vec{z} = (x,y)\) with the new vectors? Put another way, we need to find how much of each of the new basis vectors are needed for \(\vec{z}\). Mathematically, we need to solve the following equation for a and b:</p>
 
@@ -185,7 +206,14 @@ $$\hat{e_1} = \begin{bmatrix} 1 \\ 0\end{bmatrix}, \hat{e_2} = \begin{bmatrix} 0
 
 <p>Because there’s a lot going on in this equation, let’s make things more concrete by considering the case where N = 18. Fig. 3 shows four of the eighteen possible sinusoids.</p>
 
-<p><img src="https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/sinusoidalbasisvectors.PNG" alt="Fouier transform basis vectors" /></p>
+<picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/sinusoidalbasisvectors_hu860ec6eb5bb788fbfb1f3f2785182396_342442_800x0_resize_lanczos_2.PNG">
+        <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/sinusoidalbasisvectors_hu860ec6eb5bb788fbfb1f3f2785182396_342442_800x0_resize_lanczos_2.PNG" alt="Figure 3: Fourier Transform basis vectors]">
+    
+</picture>
 
 <p>For those of you wondering what happened to the N/2 + 1 sines and N/2 + 1 cosines used in most traditional introductions of the Fourier transform (such as the one I gave in my last blog post), it turns out that these two representations are equivalent due to Euler’s formula</p>
 
@@ -237,7 +265,13 @@ $$\begin{aligned} \langle v_{k_1}, v_{k_2}\rangle &= \frac{1-\left[e^{\frac{i2\p
 
 <p>Expressed mathematically:</p>
 
-<p><img src="https://raw.githubusercontent.com/devincody/Blog/master/_images/projection/fouriertransformmatrix.PNG" alt="Fouier transform matrix" /></p>
+<picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/fouriertransformmatrix.PNG">
+        <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/fouriertransformmatrix.PNG" alt="Fourier transform matrix">
+</picture>
 
 <p>The above matrix can be confusing, so I find that it’s best to think of the matrix as a collection of columns where for each column corresponds to a different k. Furthermore, it’s worthwhile to remember that we already plotted what the columns should look like in fig 3.</p>
 
@@ -325,8 +359,8 @@ $$\mathfrak{F} = \frac{1}{\sqrt{N}}\begin{bmatrix} e^{-i2\pi 0 \frac{0}{N}} & e^
     <p class="card-img-overlay">Next Article</p>
     <picture>
       
-      <source srcset="https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/Milkyway%20Nitika%20DSA%20Wide.jpg">
-      <img src="https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/Milkyway%20Nitika%20DSA%20Wide.jpg" class="card-img" alt="The Deep Synoptic Array (DSA) in Owens Valley, CA">
+      <source srcset="https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/img/Milkyway%20Nitika%20DSA%20Wide.jpg">
+      <img src="https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/img/Milkyway%20Nitika%20DSA%20Wide.jpg" class="card-img" alt="The Deep Synoptic Array (DSA) in Owens Valley, CA">
     </picture>
   </div>
   

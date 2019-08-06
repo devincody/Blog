@@ -9,7 +9,7 @@ displayInList: true
 dropCap: true
 resources:
 - name: featuredImage
-  src: "Milkyway Nitika DSA Wide.jpg"
+  src: "img/Milkyway Nitika DSA Wide.jpg"
   params:
     description: "The Deep Synoptic Array (DSA) in Owens Valley, CA"
 ---
@@ -25,7 +25,7 @@ Radio interferometry often comes off as a difficult concept, but it doesn’t ne
 
 ## So What are Radio Interferometers?
 
-![Image of Interferometers](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/InterferometerswCap.PNG)
+{{<image src="img/InterferometerswCap.PNG" alt="Figure 0: Examples of Radio Interferometers" >}}
 
 By way of introduction to the topic of interferometry, I thought I'd show images of two radio interferometers (see fig. 0). Radio Interferometry is a method by which many distinct dishes (such as ALMA) or many distinct dipoles (such as the LWA) are used together to produce images of the radio sky. Although the earliest radio telescopes used single dishes, the majority of radio telescopes being built today are interferometers. This is because interferometers are generally able to produce higher-resolution and higher-sensitivity images than their single dish counter-parts.
 	
@@ -33,7 +33,7 @@ By way of introduction to the topic of interferometry, I thought I'd show images
 	
   My plan is to start with the big punchline of radio interferometry and then work backwards to then justify everything else. So, are you ready for it? The big reveal? Ok, here it is: the most mind-blowing fact about radio astronomy is that instead of directly observing the sky, radio interferometers measure the **Fourier transform** of the sky. Slow down, don’t leave just yet, let’s take a minute to break this down. The Fourier transform is a method of taking a sequence of data which is represented in one way (i.e. a series of measurements over time, a signal coming from a sensor, or series of pixels across a spatial grid[^1]) and representing it in a different, but equally valid way. When you take the Fourier transform of some data, no information is lost. The data has simply been rearranged. Simultaneously, there exists a method by which we can take some data which has been Fourier transformed and undo the Fourier transform to recover the original data. This procedure is called the inverse Fourier transform. The important thing to take away from this, is that if we measure the Fourier transform of the sky with an interferometer, then we can reconstruct an map (image) of the sky brightness by taking the inverse Fourier transform of that data. But enough words, let’s look at some pictures.
 
-![Image of FT Pair](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/FTwCap.png)
+{{<image src="img/FTwCap.png" alt="Figure 1: Galaxy in image domain and fourier domain" >}}
 
   Fig. 1 shows two entirely equivalent, equally valid representations of a galaxy. The image on the left is an image you might find in an Astronomy 101 textbook and the image on the right is simply the Fourier transform of the image on the left[^2]. It is just as true, however, to say that the image on the left is the inverse Fourier transform of the image on the right. 
 	
@@ -44,11 +44,11 @@ By way of introduction to the topic of interferometry, I thought I'd show images
 ## The (Discrete) Fourier Transform
   
   At its core, the one-dimensional (Discrete[^3]) Fourier transform states that any signal, that is, any sequence of N data points (e.g. measurements of position, a stock’s value over time, or pixel intensities in a one-dimensional image) with regular spacing can be represented by (decomposed into) a sum of N/2+1 sines and N/2+1 cosines. 
-![Decomposition Synthesis Relationship](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/DecompSynthwCap.png)
+{{<image src="img/DecompSynthwCap.png" alt="Figure 2: Decomposition-Synthesis Relationship">}}
 
   Fig 2. shows an example of this relationship with a signal[^4] of length 16. On the left side of Fig 2. we show a 16-point signal which has been decomposed into (16/2+1 =) 9 sine and 9 cosine waves as shown on the right. Equivalently, we can say that the 18 signals on the right can be synthesized (summed) to form the signal on the left. These two representations are *exactly* equivalent in the information that they contain. As Steven Smith, author of “The Scientist and Engineer’s Guide to Digital Signal Processing”, points out, “There is no difference between the [original signal] and the sum of the signals in [the decomposition], just as there is no difference between 7 and 3+4”.
 
-![Frequency Spectrum](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/FreqSpecwCap.png)
+{{<image src="img/FreqSpecwCap.png" alt="Figure 3: Frequency Spectrum">}}
 
   Often times, it's more useful to represent the information about the Fourier decomposition as a frequency spectrum. Fig. 3 shows the frequency spectrum of the signal in Fig. 2. In this plot, the amplitudes of the sinusoids are plotted as functions of their frequencies. Notice that all the important information is contained within this plot. As you will remember from trigonometry, a sinusoid is completely determined by its frequency (X-axis), amplitude (Y-axis), and phase (sine corresponds to the real part, while cosine corresponds to the imaginary part). The actual values which comprise each sinusoid are omitted since they can be uniquely determined from the frequency, amplitude, and phase. Typically, when someone asks for the Fourier Transform of a signal, this is the information they are looking for.
   
@@ -82,7 +82,7 @@ Here, we are using the amplitudes stored in \\(X[k]\\) to scale the 18 sinusoids
 
 Let's now take a deeper look at the mechanics of correlation as used in the Fourier transform. Fig. 4 shows what this might look like graphically.
 
-![Image of Fourier Correlation Example](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/FourierCorrelationwCap.png)
+{{<image src="img/FourierCorrelationwCap.png" alt="Figure 4: Correlation of an Input Signal and Two Test Sinusoids">}}
 
 Fig. 4 shows the correlation of one input signal with two different test sinusoids. The test sinusoid on the left is a sine wave with frequency \\(k = 1\\) and amplitude 1 while the one on the right is a cosine with frequency \\(k = 2\\) and amplitude 1. As described in the correlation equation, we multiply all of the values in our sequence, \\(x\\), {{< raw >}}\((x[1], x[2], \cdots x[n]) \) {{</raw >}} with their corresponding values in the test sinusoid {{< raw >}}\( (y[1], y[2], \cdots y[n]) \) {{</raw >}}. The result of this multiplication is shown on the bottom for both of these test sinusoids. To complete the correlation, we sum all of the products together which gives us a single scalar value. Once we have done the above operation for a sine and cosine at each frequency, we will have all the information to write down the Fourier transform of the signal.
    
@@ -92,7 +92,7 @@ Now that we've gotten a better understanding of the Fourier transform, We now ha
   
 For the two-dimensional Fourier transform, we do the exact same thing, except this time, our test sinusoids look like the one shown in Fig. 5. Furthermore, we have to sum over two-dimensions (one for the x direction and one for the y direction). For the two-dimensional Fourier transform, the “direction” of the sinusoid (that is, the direction of maximal variation) varies by 360 degrees, in Fig. 5 we show two possible frequencies and directions which are denoted by the red arrows.
 
-![Two-dimensional Test Sinusoids](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/TwoTestSinusoidswCap.png)
+{{<image src="img/TwoTestSinusoidswCap.png" alt="Figure 5: Examples of Two-dimensional Test Sinusoids">}}
 
 Now, let’s return to radio astronomy and attempt to answer the question that spurred this adventure into the Fourier transform in the first place: how does an interferometer measure the Fourier transform of the sky? The answer, of course, is with test sinusoids! Supposing we had an “instrument” with an antenna pattern (also known as a beam pattern or radiation pattern) that looked like the sinusoid shown in Fig. 5, then by observing the sky with this instrument, the signal coming from the antenna would be the Fourier amplitude needed for the Fourier decomposition. Remember that an antenna pattern tells us the directional dependence of the antenna’s sensitivity to radiation.
 
@@ -108,13 +108,13 @@ Where \\(x[i,j]\\) is our intensity distribution and \\(y[i,j]\\) is our beam pa
 
 Fig. 6 shows the intermediary result after multiplication but before summation for two beam patterns. In effect, the images in Fig. 6 show the intensity of the recieved radiated power from any directions. For example, when measured by an antenna with a gaussian beam pattern, the instument receives more power from the center of the image than the the edges. When measured by (correlated with) a test sinusoid, a distinctive zebra pattern arises because the test sinusoid alternates between both positive and negative values.
 
-![Modulated Images of Galaxy](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/ModulatedBWGalaxwCap.png)
+{{<image src="img/ModulatedBWGalaxwCap.png" alt="Figure 6: Demonstration of Two-dimensional Correlations">}}
 
 Last, and most importantly, if we had many instruments each with a different test sinusoid beam pattern, then we’d be able to calculate the Fourier amplitudes for all of these sinusoids and exactly determine how the sky is represented in the Fourier domain[^6].
 
 ## The Fringe Pattern
 
-![Geometric origin of fringe pattern](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/AntGeometrywCap.png)
+{{<image src="img/AntGeometrywCap.png" alt="Figure 7: Fringe Pattern Analysis">}}
 
 Finally, we will now turn to Fig. 7, which is commonly the first image shown during lectures on Interferometry. Fig. 7 is fundamentally a blueprint for the design of an instrument which has beam pattern that approximates a test sinusoid.
   
@@ -151,7 +151,7 @@ $$R(\theta) = \frac{V^2}{2}\cos(\omega |\vec{b}|\cos(\theta)/c)$$
 
   This, at long-last, is our test sinusoid (in proper radio astronomy nomenclature, this pattern is closely related to the interferometer fringe pattern[^9]). Fig. 8 plots the above equation for R as we sweep theta from one side of the sky to the other (left). The instrument is most sensitive in the directions of the sinusoidal maxima and has “negative” sensitivity at the locations of the dips. 
  
-![Image of Decomposition Synthesis Relationship](https://raw.githubusercontent.com/devincody/Blog/master/_images/interferometry/FringePatternwCap.png)
+{{<image src="img/FringePatternwCap.png" alt="Figure 8: Fringe Patterns">}}
  
   But, wait, you might say, Fig. 8 doesn’t look like the two-dimensional pattern shown in Fig. 5! And you’d be right, they do not look the same; for starters, Fig. 8 is a one-dimensional pattern, and second, Fig. 8 is not a pure cosinusoidal pattern. The answer to the first observation is that the equation for the test sinusoid, R, actually *is* a 2-dimensional pattern, we simply choose to only plot R in one-dimension (i.e. in \\(\theta\\)). If we let \\(\phi\\) be the 2nd angle of a coordinate system where \\(\phi\\) is orthogonal to \\(\theta\\), then we can plot R as a function of \\(\theta\\) and \\(\phi\\), then we will indeed find that R looks like a two-dimensional test sinusoid. 
   
