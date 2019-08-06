@@ -1,9 +1,9 @@
 ---
-title: "Introduction to Interferometry"
+title: "Introduction to Radio Interferometry"
 date: 2018-02-27T17:40:12-07:00
 draft: false
 description: "Radio interferometry often comes off as a difficult concept, but it doesn’t need to be that way. In this blog post, I will attempt to give a more intuitive introduction to radio interferometry, one that, in particular, might help a budding radio engineer learn more about this fascinating field."
-categories: ["Radio Astronomy", "Fourier Transforms"]
+categories: ["Radio-Astronomy", "Fourier-Transforms"]
 displayInMenu: false
 displayInList: true
 dropCap: true

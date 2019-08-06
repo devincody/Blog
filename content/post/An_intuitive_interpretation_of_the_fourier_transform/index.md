@@ -2,17 +2,18 @@
 title: "An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra)"
 date: 2019-04-06T23:31:24-07:00
 description: "My objective in this post is to show a way of understanding the Fourier transform from a linear algebraic perspective. Once an appreciation for this connection is gained, many of the subtleties of the Fourier transform become almost obvious when observed through this lens"
+categories: ["Linear-Algebra", "Fourier-Transforms"]
 dropCap: true
 displayInMenu: false
 displayInList: true
-categories:
-tags: ["Linear Algebra", "Fourier Transforms"]
+
 draft: false
 Resources:
 - name: featuredImage
   src: "FFT-Time-Frequency-View.png"
   params:
     description: "The Fourier transform in time and frequency domains"
+
 ---
 
 
