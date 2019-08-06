@@ -7,9 +7,9 @@ categories: ["RadioAstronomy", "FourierTransforms"]
 displayInMenu: false
 displayInList: true
 dropCap: true
-Resources:
+resources:
 - name: featuredImage
-  src: "img/milkyway.webp"
+  src: "FFT-Time-Frequency-View.png"
   params:
     description: "Description for the featured image, used as the alt text"
 ---
@@ -169,10 +169,6 @@ As if by magic, our test sinusoid is no longer distorted. Note that we restrict 
   Please feel free to leave a comment or connect with me about this post or anything else that I'm working on! You can reach me at: devin.cody@gmail.com
 
 
-
-## Notes
-
-
 [^1]: This is a potential trap for people who have used the the Fourier transform previously. Often the Fourier transform is introduced as a method of studying *temporal* variations which is a vaild way of understanding the Fourier transform. However, in astronomy, we are more interested in studying the *spatial* variations of a signal. As alluded to earier, this might be the brightness of an array of pixels or the compression of a spring as a function of position.
 
 [^2]: For those of you following along at home, I've plotted the Fourier transform image in dB (logarithmic) to increase dynamic range.
@@ -198,40 +194,3 @@ As if by magic, our test sinusoid is no longer distorted. Note that we restrict 
 [^12]: Although antenna baselines do not change during the observation, it turns out that rotation of the earth will change the projection of the baseline onto the plane whose normal vector points in the direction of the star (i.e. the baseline as seen from the star's perspective), which is the actually important metric. In this way, interferometers with only a few antennas can make quality images by waiting for the earth to rotate.
 
 [^13]: The number of baselines scales as N(N-1) where N is the number of antennas. With N antennas, there are N(N-1)/2 pairs of antennas. For each pair of antennas there are two baselines, since the seperation between the antennas can be described equally with 2 anti-parallel vectors.
-
-
-<!-- 
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    // Fix <code> tags after MathJax finishes running. This is a
-    // hack to overcome a shortcoming of Markdown. Discussion at
-    // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-
-code.has-jax {
-    font: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    color: #815151;
-} -->

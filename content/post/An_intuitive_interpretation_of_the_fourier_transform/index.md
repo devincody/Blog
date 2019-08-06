@@ -6,13 +6,13 @@ categories: []
 dropCap: false
 displayInMenu: false
 displayInList: true
-categories: ["LinearAlgebra", "FourierTransforms"]
+categories: ["Linear Algebra", "Fourier Transforms"]
 draft: false
 resources:
 - name: featuredImage
-  src: "img/Milkyway3.jpg"
+  src: "Milkyway Nitika DSA Wide.jpg"
   params:
-    description: "Description for the featured image, used as the alt text"
+    description: ""
 ---
 
 
