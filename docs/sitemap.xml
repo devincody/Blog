@@ -3,18 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://devincody.github.io/BlogAether/</loc>
+    <lastmod>2019-08-05T17:40:12-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/BlogAether/about/</loc>
+    <lastmod>2019-08-05T17:40:12-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devincody.github.io/BlogAether/post/an_intuitive_interpretation_of_the_fourier_transform/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://devincody.github.io/BlogAether/categories/</loc>
-    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devincody.github.io/BlogAether/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -38,18 +43,12 @@
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/fouriertransforms/</loc>
-    <lastmod>2018-02-27T17:40:12-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://devincody.github.io/BlogAether/post/intro_to_intererometry/</loc>
+    <loc>https://devincody.github.io/BlogAether/post/introduction_to_radio_interferometry/</loc>
     <lastmod>2018-02-27T17:40:12-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/BlogAether/categories/radioastronomy/</loc>
+    <loc>https://devincody.github.io/BlogAether/categories/radio-astronomy/</loc>
     <lastmod>2018-02-27T17:40:12-07:00</lastmod>
     <priority>0</priority>
   </url>

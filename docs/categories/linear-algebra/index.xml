@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linear Algebra - Devin Cody</title>
+    <title>Linear-Algebra - Devin Cody</title>
     <link>https://devincody.github.io/BlogAether/categories/linear-algebra/</link>
-    <description>Recent content in Linear Algebra on Devin Cody</description>
+    <description>Recent content in Linear-Algebra on Devin Cody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Apr 2019 23:31:24 -0700</lastBuildDate>
