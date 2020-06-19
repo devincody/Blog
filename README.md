@@ -1,3 +1,3 @@
-# BlogAether
+# Blog
 
-https://devincody.github.io/BlogAether/
+https://devincody.github.io/Blog/
