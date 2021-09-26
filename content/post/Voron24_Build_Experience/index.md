@@ -4,9 +4,9 @@ date: 2021-09-26T00:31:49-07:00
 description: "One of my Quarantine projects this year was building a 3D Printer... with a 3D printer."
 categories: ["3D Printing", "Voron2.4"]
 dropCap: true
-displayInMenu: false
+displayInMenu: true
 displayInList: true
-draft: true
+draft: false
 resources:
 - name: featuredImage
   src: "img/voron_print.jpg"
