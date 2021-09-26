@@ -18,19 +18,12 @@
       <description>A lot of time has past since my last blog post (apologies, if you were on the edge of your seat), but I’ve now released my second blog post about the connection between linear algebra and Fourier analysis (my two favorite flavors of mathematics). Check it out below!
 Also check out my first blog post below in which I give my two cents on how engineers (and scientists!) should be introduced to radio interferometry.</description>
     </item><item>
-      <title>An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra)</title>
-      <link>https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/</link>
+      <title>Posts</title>
+      <link>https://devincody.github.io/Blog/post/</link>
       <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
       
-      <guid>https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/</guid>
-      <description>My objective in this post is to show a way of understanding the Fourier transform from a linear algebraic perspective. Once an appreciation for this connection is gained, many of the subtleties of the Fourier transform become almost obvious when observed through this lens</description>
-    </item><item>
-      <title>Introduction to Radio Interferometry</title>
-      <link>https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/</link>
-      <pubDate>Tue, 27 Feb 2018 17:40:12 -0700</pubDate>
-      
-      <guid>https://devincody.github.io/Blog/post/introduction_to_radio_interferometry/</guid>
-      <description>Radio interferometry often comes off as a difficult concept, but it doesn’t need to be that way. In this blog post, I will attempt to give a more intuitive introduction to radio interferometry, one that, in particular, might help a budding radio engineer learn more about this fascinating field.</description>
+      <guid>https://devincody.github.io/Blog/post/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
