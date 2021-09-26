@@ -1,10 +1,10 @@
 ---
-title: "Voron 2.4 Build"
+title: "The Voron 2.4 Build Experience"
 date: 2021-09-26T00:31:49-07:00
-description: "One of my Quarantine projects this year was building a 3D Printer... with a 3D printer."
-categories: ["3D Printing", "Voron2.4"]
+description: "One of my quarantine projects this year was building a 3D Printer... with a 3D printer."
+categories: ["3D Printing"]
 dropCap: true
-displayInMenu: true
+displayInMenu: false
 displayInList: true
 draft: false
 resources:
@@ -17,14 +17,17 @@ resources:
 
 ## Introduction
 
-This year I joined a pyramid scheme: 3D printer building. Over the last six months, I’ve invested time, money, and my sanity to build a 3D printer whose entire purpose is to print more 3D printer parts. But the final product has been so worth it!
+This year I joined a pyramid scheme: 3D printer building. Over the last six months, I’ve invested time, money, and possibly my sanity to build a 3D printer whose entire purpose is to print more 3D printer parts. But the final product has been so worth it!
+
 I probably spent 3 months hemming and hawing over what 3D printer to buy or build. There’s a lot of vaporware in the 3D printing market these days and it’s hard to know what’s the right printer to go with. Ultimately, I decided to build a Voron2.4 due to its ability to work with tougher “engineering-grade” plastics, the rapid printing speeds that it’s able to achieve, and the strong community backing. In the end, I have a phenomenal 3D printer that’s met all my needs and then some.
 
 ## Pictures
-{{<image src="img/frame_assembling.jpg" alt="Figure 0: Assembling the Frame" >}}
-This is a picture I took while assembling the 2020 Extrusion Frame in my kitchen. I used machinist blocks to ensure everything was plumb and square.
 
-{{<image src="img/frame_assembled.png" alt="Figure 1: Assembled Frame" >}}
+{{<image src="img/frame_assembling.jpg" alt="Figure 0: Assembling the Frame" >}}
+I assembled the 2020 extrusion frame on my kitchen counter top which is the flattest surface in my house. 
+I used machinist blocks to ensure everything was plumb and square.
+
+{{<image src="img/frame_assembled.jpg" alt="Figure 1: Assembled Frame" >}}
 Assembled mechanical Frame. 
 
 {{<image src="img/gantry_assembled.png" alt="Figure 2: Assembled Gantry" >}}
@@ -44,5 +47,8 @@ This was an ambitious first print. Although, as I mentioned in the beginning, th
 
 
 ## Some thoughts about the Voron Experience
-Overall, the build process went smoothly. Between the official documentation, YouTube videos from people that have built Vorons in the past, and their discord community, I was able to fit all the components together, wire everything without any electrical failures (including 120V mains), and configure the Klipper firmware in ~30 hours of work. The Voron website can be a little bit overwhelming with the 100+ component bill of materials and the lack of flexibility some in the Voron community thinks exists when it comes to what vendors are “acceptable”. The official documentation was pretty good, but omitted a few steps I only discovered later. The CAD model of the printer is very good and could almost replace the official documentation. 
-The dimensions of the printer that I built was 250mm X 250mm which is the smallest size that Voron offers. The larger dimensions are more popular, but there are a few reasons why I didn’t build a larger printer. The first reason is that I can’t think of many parts that I would print that an extra 10cm would help with. The second reason is that the printing failure rate scales with the volume of the printed part. So even if the part is 40% bigger, the print is almost 3X more likely to fail. The third reason is that part of the reason why coreXY machines are better than bed slingers is that the moving parts are light and thus can move faster. When using a larger build volume, the gantry becomes heavier and thus the maximum speed is slower. Lastly, I live in an apartment, a bigger build volume means less room for me. That being said, fitting all the electronics underneath the printer was a pain with the smaller working dimensions.
+{{<image src="img/cad.png" alt="Figure -1: Voron CAD file" >}}
+
+Overall, the build process went smoothly. Between the official documentation, YouTube videos from people that have built Vorons in the past, and their discord community, I was able to fit all the components together, wire everything without any electrical failures, including 120V mains, and configure the Klipper firmware in ~30 hours of work. The Voron bill of materials can be a little bit overwhelming (100 components sourced from a variety of vendors), but most people seem to buy kits to reduce the tedium of the process. This approach is roundly discouraged by the Voron dev-team (“if it isn’t our BOM, it isn’t a Voron”-type mentality). But in my experience, replacing one or two parts is worth it for the convenience. The official documentation was pretty good, but omitted a few steps I only discovered later. The CAD model of the printer is very good and could almost replace the official documentation. 
+
+The dimensions of the printer that I built was 250mm X 250mm which is the smallest size that Voron offers. The larger dimensions are more popular, but there are a few reasons why I didn’t build a larger printer. The first reason is that I can’t think of many parts that I would print that an extra 10cm would help with. The second reason is that the printing failure rate scales with the volume of the printed part. So even if the part is only 40% bigger, the print is almost 3X more likely to fail. The third reason is that part of the reason why coreXY machines are better than bed slingers is that the moving parts are light and thus can move faster. When using a larger build volume, the gantry becomes heavier and thus the maximum speed is slower. Lastly, I live in a small apartment. A bigger build volume means less space for me. That being said, fitting all the electronics underneath the printer was a pain with the smaller working dimensions.

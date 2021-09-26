@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The Voron 2.4 Build Experience &middot; Devin Cody</title>
+  <meta name="description" content="One of my quarantine projects this year was building a 3D Printer... with a 3D printer." />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://devincody.github.io/Blog/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://devincody.github.io/Blog/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://devincody.github.io/Blog/favicon-16x16.png">
+  <link rel="manifest" href="https://devincody.github.io/Blog/site.webmanifest">
+  <link rel="mask-icon" href="https://devincody.github.io/Blog/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  <link href="https://devincody.github.io/Blog/css/concated.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: #ecedef url("https://devincody.github.io/Blog/img/cream_pixels.png") repeat;
+    }
+  </style>
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://devincody.github.io/Blog/" class="nav-text">The Blog</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://devincody.github.io/Blog/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://devincody.github.io/Blog/about/" class="hamburger-menu-overlay-link">Welcome to My Blog!</a></li>
+      <li><a href="https://devincody.github.io/Blog/categories/3d-printing" class="hamburger-menu-overlay-link">3d printing</a></li><li><a href="https://devincody.github.io/Blog/categories/fourier-transforms" class="hamburger-menu-overlay-link">Fourier transforms</a></li><li><a href="https://devincody.github.io/Blog/categories/linear-algebra" class="hamburger-menu-overlay-link">Linear algebra</a></li><li><a href="https://devincody.github.io/Blog/categories/radio-astronomy" class="hamburger-menu-overlay-link">Radio astronomy</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">The Voron 2.4 Build Experience</h1>
+          <p class="post-date">Posted <time datetime="2021-09-26">Sep 26, 2021</time></p>
+        </header>
+        
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/voron_print_huf59596c9ca730b66a81ca04163d10e54_6225920_800x0_resize_q75_lanczos.JPG">
+          <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/voron_print_huf59596c9ca730b66a81ca04163d10e54_6225920_800x0_resize_q75_lanczos.JPG" alt="First print using my Voron2.4">
+        </picture>
+        
+        <h2 id="introduction">Introduction</h2>
+<p>This year I joined a pyramid scheme: 3D printer building. Over the last six months, I’ve invested time, money, and possibly my sanity to build a 3D printer whose entire purpose is to print more 3D printer parts. But the final product has been so worth it!</p>
+<p>I probably spent 3 months hemming and hawing over what 3D printer to buy or build. There’s a lot of vaporware in the 3D printing market these days and it’s hard to know what’s the right printer to go with. Ultimately, I decided to build a Voron2.4 due to its ability to work with tougher “engineering-grade” plastics, the rapid printing speeds that it’s able to achieve, and the strong community backing. In the end, I have a phenomenal 3D printer that’s met all my needs and then some.</p>
+<h2 id="pictures">Pictures</h2>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/frame_assembling_hue6913c39cf9a58412be75c592597d90e_2653528_800x0_resize_q75_lanczos.jpg">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/frame_assembling_hue6913c39cf9a58412be75c592597d90e_2653528_800x0_resize_q75_lanczos.jpg" alt="Figure 0: Assembling the Frame">
+    
+</picture>
+I assembled the 2020 extrusion frame on my kitchen counter top which is the flattest surface in my house.
+I used machinist blocks to ensure everything was plumb and square.</p>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/frame_assembled_hu819b2f4b4f06dd051716c560c51af713_106125_800x0_resize_q75_lanczos.jpg">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/frame_assembled_hu819b2f4b4f06dd051716c560c51af713_106125_800x0_resize_q75_lanczos.jpg" alt="Figure 1: Assembled Frame">
+    
+</picture>
+Assembled mechanical Frame.</p>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/gantry_assembled.png">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/gantry_assembled.png" alt="Figure 2: Assembled Gantry">
+</picture>
+One of the coolest parts of the Voron2.4 build is the flying gantry. The gantry contains all the components of the core-XY mechanism. It’s called a flying gantry because the gantry is suspended by four belts which operate independently. This allows the printer to do “bed leveling” without moving the bed at all.</p>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/placement.png">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/placement.png" alt="Figure 3: All the electronics placed underneath the printer">
+</picture>
+Let the wiring commence!</p>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/routing.png">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/routing.png" alt="Figure 4: All the electronics wired together">
+</picture>
+Most time-intensive part of the project done! Doing all the wiring by hand probably took ten hours since I labeled every wire and kept them as tidy as possible. The result is fairly clean and professional. This was my first experience with mains voltages, but after watching about a dozen hours of videos discussing different electric systems, I felt confident enough to wire everything together safely.</p>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/mother_hen.png">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/mother_hen.png" alt="Figure 5: Voron Afterburner Toolhead with First Print">
+</picture>
+Like a mother hen looking over her chicks, the Voron tool head proudly watches over its first completed parts. Metaphors aside, configuring the firmware was surprisingly easy. The Klipper project has pretty good documentation and the Voron presets were very good.</p>
+<p><picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/first_print.png">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/first_print.png" alt="Figure 6: First Print">
+</picture>
+This was an ambitious first print. Although, as I mentioned in the beginning, the goal of every 3D printer is to print more 3D printer parts. These tabs, were some of the final pieces that I needed to attach the side paneling to the printer.</p>
+<h2 id="some-thoughts-about-the-voron-experience">Some thoughts about the Voron Experience</h2>
+<picture>
+    
+    
+    
+        <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/cad_hu28573cb5cd9cdc8804c19142a40e1d88_488396_800x0_resize_lanczos_2.png">
+        <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/cad_hu28573cb5cd9cdc8804c19142a40e1d88_488396_800x0_resize_lanczos_2.png" alt="Figure -1: Voron CAD file">
+    
+</picture>
+<p>Overall, the build process went smoothly. Between the official documentation, YouTube videos from people that have built Vorons in the past, and their discord community, I was able to fit all the components together, wire everything without any electrical failures, including 120V mains, and configure the Klipper firmware in ~30 hours of work. The Voron bill of materials can be a little bit overwhelming (100 components sourced from a variety of vendors), but most people seem to buy kits to reduce the tedium of the process. This approach is roundly discouraged by the Voron dev-team (“if it isn’t our BOM, it isn’t a Voron”-type mentality). But in my experience, replacing one or two parts is worth it for the convenience. The official documentation was pretty good, but omitted a few steps I only discovered later. The CAD model of the printer is very good and could almost replace the official documentation.</p>
+<p>The dimensions of the printer that I built was 250mm X 250mm which is the smallest size that Voron offers. The larger dimensions are more popular, but there are a few reasons why I didn’t build a larger printer. The first reason is that I can’t think of many parts that I would print that an extra 10cm would help with. The second reason is that the printing failure rate scales with the volume of the printed part. So even if the part is only 40% bigger, the print is almost 3X more likely to fail. The third reason is that part of the reason why coreXY machines are better than bed slingers is that the moving parts are light and thus can move faster. When using a larger build volume, the gantry becomes heavier and thus the maximum speed is slower. Lastly, I live in a small apartment. A bigger build volume means less space for me. That being said, fitting all the electronics underneath the printer was a pain with the smaller working dimensions.</p>
+
+      </article>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-devincody-github-io-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/FFT-Time-Frequency-View.png">
+      <img src="https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/img/FFT-Time-Frequency-View.png" class="card-img" alt="The Fourier transform in time and frequency domains">
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra)</h2>
+    <p class="card-text">My objective in this post is to show a way of understanding the Fourier transform from a linear algebraic perspective. Once an appreciation for this connection is gained, many of the subtleties of the Fourier transform become almost obvious when observed through this lens</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-04-06 46:00">Apr 6, 2019</time></p>
+      <p>#Linear-Algebra #Fourier-Transforms </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://devincody.github.io/Blog/" class="card home-card" style="background-image: url( https://devincody.github.io/Blog/img/milkyway.webp )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://devincody.github.io/Blog/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>

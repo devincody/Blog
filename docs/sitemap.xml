@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://devincody.github.io/Blog/categories/3d-printing/</loc>
+    <lastmod>2021-09-26T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/categories/</loc>
+    <lastmod>2021-09-26T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/post/</loc>
+    <lastmod>2021-09-26T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/post/voron24_build_experience/</loc>
+    <lastmod>2021-09-26T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://devincody.github.io/Blog/</loc>
     <lastmod>2019-08-05T17:40:12-07:00</lastmod>
   </url>
@@ -18,22 +38,12 @@
   </url>
   
   <url>
-    <loc>https://devincody.github.io/Blog/categories/</loc>
-    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://devincody.github.io/Blog/categories/fourier-transforms/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://devincody.github.io/Blog/categories/linear-algebra/</loc>
-    <lastmod>2019-04-06T23:31:24-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devincody.github.io/Blog/post/</loc>
     <lastmod>2019-04-06T23:31:24-07:00</lastmod>
   </url>
   

@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D Printing - Devin Cody</title>
+    <link>https://devincody.github.io/Blog/categories/3d-printing/</link>
+    <description>Recent content in 3D Printing on Devin Cody</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Sep 2021 00:31:49 -0700</lastBuildDate>
+    
+        <atom:link href="https://devincody.github.io/Blog/categories/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Voron 2.4 Build Experience</title>
+      <link>https://devincody.github.io/Blog/post/voron24_build_experience/</link>
+      <pubDate>Sun, 26 Sep 2021 00:31:49 -0700</pubDate>
+      
+      <guid>https://devincody.github.io/Blog/post/voron24_build_experience/</guid>
+      <description>One of my quarantine projects this year was building a 3D Printer... with a 3D printer.</description>
+    </item>
+  </channel>
+</rss>

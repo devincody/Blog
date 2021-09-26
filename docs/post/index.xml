@@ -5,11 +5,18 @@
     <description>Recent content in Posts on Devin Cody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Apr 2019 23:31:24 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 Sep 2021 00:31:49 -0700</lastBuildDate>
     
         <atom:link href="https://devincody.github.io/Blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The Voron 2.4 Build Experience</title>
+      <link>https://devincody.github.io/Blog/post/voron24_build_experience/</link>
+      <pubDate>Sun, 26 Sep 2021 00:31:49 -0700</pubDate>
+      
+      <guid>https://devincody.github.io/Blog/post/voron24_build_experience/</guid>
+      <description>One of my quarantine projects this year was building a 3D Printer... with a 3D printer.</description>
+    </item><item>
       <title>An Intuitive Interpretation Of The Fourier Transform (or The Link Between Fourier Analysis And Linear Algebra)</title>
       <link>https://devincody.github.io/Blog/post/an_intuitive_interpretation_of_the_fourier_transform/</link>
       <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
