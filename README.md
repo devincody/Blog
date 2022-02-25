@@ -1,3 +1,3 @@
 # Blog
 
-https://devincody.github.io/Blog/
+https://devincody.github.io/Blog/post/
