@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The Problem with Diffraction Gratings &middot; Devin Cody</title>
+  <meta name="description" content="Why diffraction gratings are rather grating" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://devincody.github.io/Blog/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://devincody.github.io/Blog/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://devincody.github.io/Blog/favicon-16x16.png">
+  <link rel="manifest" href="https://devincody.github.io/Blog/site.webmanifest">
+  <link rel="mask-icon" href="https://devincody.github.io/Blog/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  <link href="https://devincody.github.io/Blog/css/concated.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: #ecedef url("https://devincody.github.io/Blog/img/cream_pixels.png") repeat;
+    }
+  </style>
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://devincody.github.io/Blog/" class="nav-text">The Blog</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://devincody.github.io/Blog/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://devincody.github.io/Blog/about/" class="hamburger-menu-overlay-link">Welcome to My Blog!</a></li>
+      <li><a href="https://devincody.github.io/Blog/categories/3d-printing" class="hamburger-menu-overlay-link">3d printing</a></li><li><a href="https://devincody.github.io/Blog/categories/fourier-transforms" class="hamburger-menu-overlay-link">Fourier transforms</a></li><li><a href="https://devincody.github.io/Blog/categories/linear-algebra" class="hamburger-menu-overlay-link">Linear algebra</a></li><li><a href="https://devincody.github.io/Blog/categories/optics" class="hamburger-menu-overlay-link">Optics</a></li><li><a href="https://devincody.github.io/Blog/categories/physics" class="hamburger-menu-overlay-link">Physics</a></li><li><a href="https://devincody.github.io/Blog/categories/radio-astronomy" class="hamburger-menu-overlay-link">Radio astronomy</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">The Problem with Diffraction Gratings</h1>
+          <p class="post-date">Posted <time datetime="2021-09-26">Sep 26, 2021</time></p>
+        </header>
+        
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://devincody.github.io/Blog/post/the_problem_with_diffraction/img/grating_hucd21a1586bd756b96aacabdcd59f9c19_563565_800x0_resize_q75_lanczos.JPG">
+          <img src="https://devincody.github.io/Blog/post/the_problem_with_diffraction/img/grating_hucd21a1586bd756b96aacabdcd59f9c19_563565_800x0_resize_q75_lanczos.JPG" alt="&#34;Diffraction&#34; - Some university physics class, probably">
+        </picture>
+        
+        <h2 id="whats-not-a-diffraction-grating">What’s not a diffraction grating?</h2>
+<p>Nothing. Let’s talk about why.</p>
+<p>It’s happening somewhere in the world this very moment &ndash; a professor is introducing diffraction by pulling out some mystical square out of some worn-out beaten-up useless-looking box. They show it to the class and then hold it in front of a laser and suddenly the beam suddenly splits into many points (a so-called diffraction pattern). Meanwhile all the students, if they’re awake enough to care, start wondering what could be so magical about this hidden treasure. Clearly, it’s special since it’s been seemingly passed down from professor to professor over millennia.</p>
+<p>Wrong.</p>
+<p>Nothing is special about this “diffraction grating” that it produces a special pattern. The truth, and I personally believe this is where all lectures about diffraction should start, is that EVERYTHING produces a “diffraction pattern”. For example, let’s examine this high-precision optical carpet (as opposed to optical bench) that I used to set up a diffraction experiment in my apartment.</p>
+<h2 id="experimental-design">Experimental Design</h2>
+<p><figure>
+    <img src="img/optical_carpet.jpg"
+         alt="Figure 1: Precision-machined optical carpet"/> <figcaption>
+            <p><strong>Figure 1:</strong> Precision-machined optical carpet</p>
+        </figcaption>
+</figure>
+
+On the left I have an off-the-shelf laser pointer and in the middle, I have a scarf that I stole from my girlfriend’s closet. The laser shines though the scarf and hits the wall. Now let’s examine the laser-beam with the scarf in the optical path and without the scarf.</p>
+<h2 id="results">Results</h2>
+<p><figure>
+    <img src="img/scarf.jpg"
+         alt="Figure 2: Before and After pictures of laser spot with scarf diffraction grating"/> <figcaption>
+            <p><strong>Figure 2:</strong> Before and After pictures of laser spot with scarf diffraction grating</p>
+        </figcaption>
+</figure>
+
+Well, la-de-da, if that isn’t a diffraction pattern!? Admittedly it’s a rather poor diffraction pattern, but the fact remains that from a singular point of light, we suddenly have many points of light. The scarf causes diffraction!</p>
+<p>Let’s try something else. Here’s a coffee-stained version of K&amp;R&rsquo;s seminal work: <em>The C Programming Language</em>.</p>
+<figure>
+    <img src="img/book.jpg"
+         alt="Figure 3: Diffraction through the pages of a book"/> <figcaption>
+            <p><strong>Figure 3:</strong> Diffraction through the pages of a book</p>
+        </figcaption>
+</figure>
+
+<p>Surely some random piece of trash I found on the ground couldn’t produce a diffraction pattern!</p>
+<figure>
+    <img src="img/trash.jpg"
+         alt="Figure 4: Diffraction through some trash"/> <figcaption>
+            <p><strong>Figure 4:</strong> Diffraction through some trash</p>
+        </figcaption>
+</figure>
+
+<p>Now what about a hair from my own scalp.</p>
+<figure>
+    <img src="img/hair.jpg"
+         alt="Figure 5: Diffraction around a hair"/> <figcaption>
+            <p><strong>Figure 5:</strong> Diffraction around a hair</p>
+        </figcaption>
+</figure>
+
+<p>Another diffraction pattern! How cool is that? Everything is a diffraction grating! “But wait,” I hear you cry out across time and space, “this <!-- raw HTML omitted --> won’t produce a diffraction pattern!” Of course, it will. Just because it doesn’t make an interesting diffraction pattern, doesn’t mean that it isn’t a diffraction grating. A principle known as Huygens’ principle states that any, and all edges (microscopic or macroscopic) cause diffraction. And anything that has edges is a thing (I’ll let the philosophers and mathematicians duke this one out). Thus, everything can and does create diffraction patterns!</p>
+<p>Now, an important thing to note here, is that, often, the diffraction pattern isn’t interesting until you pick a good wavelength (or rather, wavenumber, for all the wavenumber fanboys out there). For example, the diffraction pattern for DNA isn’t interesting in optical frequencies, but the diffraction pattern of DNA is very interesting when you use X-rays (thanks Rosalind Franklin)! As a rule of thumb, the diffraction pattern is most “interesting” when the wavelength of the light is similar to the object itself.</p>
+<p>In short, diffraction patterns are everywhere and are almost as fundamental as the objects themselves. The study of diffraction patterns permeates modern science almost as much as the creation of null hypotheses dominated my middle-school study of the scientific method. So, the next time you’re out and about, keep a look out for diffraction patterns, you never know where they might show up!</p>
+<p>A note to the pedantic: According to Wikipedia, diffraction gratings specifically refer to optical components with repeating structures. Fair enough, but in the academic world, diffraction gratings and diffraction are synonymous for at least the first year of study.</p>
+
+      </article>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-devincody-github-io-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://devincody.github.io/Blog/post/voron24_build_experience/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://devincody.github.io/Blog/post/voron24_build_experience/img/voron_print.JPG">
+      <img src="https://devincody.github.io/Blog/post/voron24_build_experience/img/voron_print.JPG" class="card-img" alt="First print using my Voron2.4">
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">The Voron 2.4 Build Experience</h2>
+    <p class="card-text">One of my quarantine projects this year was building a 3D Printer... with a 3D printer.</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2021-09-26 926:00">Sep 26, 2021</time></p>
+      <p>#3D Printing </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://devincody.github.io/Blog/" class="card home-card" style="background-image: url( https://devincody.github.io/Blog/img/milkyway.webp )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://devincody.github.io/Blog/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>
