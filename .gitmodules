@@ -1,3 +1,3 @@
-[submodule "themes/Aether"]
-	path = themes/Aether
+[submodule "themes/aether"]
+	path = themes/aether
 	url = https://github.com/josephhutch/aether.git
