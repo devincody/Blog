@@ -5,11 +5,25 @@
     <description>Recent content in Categories on Devin Cody</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Sep 2021 00:31:49 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jun 2022 00:31:49 -0700</lastBuildDate>
     
         <atom:link href="https://devincody.github.io/Blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Coding</title>
+      <link>https://devincody.github.io/Blog/categories/coding/</link>
+      <pubDate>Tue, 21 Jun 2022 00:31:49 -0700</pubDate>
+      
+      <guid>https://devincody.github.io/Blog/categories/coding/</guid>
+      <description></description>
+    </item><item>
+      <title>Software</title>
+      <link>https://devincody.github.io/Blog/categories/software/</link>
+      <pubDate>Tue, 21 Jun 2022 00:31:49 -0700</pubDate>
+      
+      <guid>https://devincody.github.io/Blog/categories/software/</guid>
+      <description></description>
+    </item><item>
       <title>3D Printing</title>
       <link>https://devincody.github.io/Blog/categories/3d-printing/</link>
       <pubDate>Sun, 26 Sep 2021 00:31:49 -0700</pubDate>
@@ -29,20 +43,6 @@
       <pubDate>Sun, 26 Sep 2021 00:31:49 -0700</pubDate>
       
       <guid>https://devincody.github.io/Blog/categories/physics/</guid>
-      <description></description>
-    </item><item>
-      <title>Fourier-Transforms</title>
-      <link>https://devincody.github.io/Blog/categories/fourier-transforms/</link>
-      <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
-      
-      <guid>https://devincody.github.io/Blog/categories/fourier-transforms/</guid>
-      <description></description>
-    </item><item>
-      <title>Linear-Algebra</title>
-      <link>https://devincody.github.io/Blog/categories/linear-algebra/</link>
-      <pubDate>Sat, 06 Apr 2019 23:31:24 -0700</pubDate>
-      
-      <guid>https://devincody.github.io/Blog/categories/linear-algebra/</guid>
       <description></description>
     </item>
   </channel>

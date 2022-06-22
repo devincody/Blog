@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Devin’s Bag-o-Tricks and Other Opinionated Advice &middot; Devin Cody</title>
+  <meta name="description" content="for applying to Software Engineer positions" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://devincody.github.io/Blog/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://devincody.github.io/Blog/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://devincody.github.io/Blog/favicon-16x16.png">
+  <link rel="manifest" href="https://devincody.github.io/Blog/site.webmanifest">
+  <link rel="mask-icon" href="https://devincody.github.io/Blog/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  <link href="https://devincody.github.io/Blog/css/concated.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: #ecedef url("https://devincody.github.io/Blog/img/cream_pixels.png") repeat;
+    }
+  </style>
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://devincody.github.io/Blog/" class="nav-text">The Blog</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://devincody.github.io/Blog/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://devincody.github.io/Blog/about/" class="hamburger-menu-overlay-link">Welcome to My Blog!</a></li>
+      <li><a href="https://devincody.github.io/Blog/categories/3d-printing" class="hamburger-menu-overlay-link">3d printing</a></li><li><a href="https://devincody.github.io/Blog/categories/coding" class="hamburger-menu-overlay-link">Coding</a></li><li><a href="https://devincody.github.io/Blog/categories/fourier-transforms" class="hamburger-menu-overlay-link">Fourier transforms</a></li><li><a href="https://devincody.github.io/Blog/categories/linear-algebra" class="hamburger-menu-overlay-link">Linear algebra</a></li><li><a href="https://devincody.github.io/Blog/categories/optics" class="hamburger-menu-overlay-link">Optics</a></li><li><a href="https://devincody.github.io/Blog/categories/physics" class="hamburger-menu-overlay-link">Physics</a></li><li><a href="https://devincody.github.io/Blog/categories/radio-astronomy" class="hamburger-menu-overlay-link">Radio astronomy</a></li><li><a href="https://devincody.github.io/Blog/categories/software" class="hamburger-menu-overlay-link">Software</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">Devin’s Bag-o-Tricks and Other Opinionated Advice</h1>
+          <p class="post-date">Posted <time datetime="2022-06-21">Jun 21, 2022</time></p>
+        </header>
+        
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://devincody.github.io/Blog/post/devins_bag_o_tricks/img/logos_hu8efac6000b808ba6e9c706e0a1cef519_83242_800x0_resize_lanczos_2.png">
+          <img src="https://devincody.github.io/Blog/post/devins_bag_o_tricks/img/logos_hu8efac6000b808ba6e9c706e0a1cef519_83242_800x0_resize_lanczos_2.png" alt="&#34;Diffraction&#34; - Some university physics class, probably">
+        </picture>
+        
+        <h2 id="introduction">Introduction:</h2>
+<p>The following 12 points are a combination of advice I got from other engineers and tricks that I learned while applying to L4-equivalent positions at Amazon and Google in January of 2022.</p>
+<h2 id="the-list">The List:</h2>
+<h3 id="1-dont-grind-leetcode">1. Don’t grind Leetcode.</h3>
+<ul>
+<li>A good coding interview is a conversation. In interviews you should say 10-20 words for every word of code you write. Leetcode is the exact opposite. A good interview is about exploring the prompt from multiple angles, coming up with good ideas, discussing their merits, discussing the  options   within the context of what’s important to your interviewer. And finally, writing code.</li>
+<li>Leetcode may be useful when you’re learning a topic for the first time and you want to make sure your solution is not totally wrong.</li>
+<li>Most interview questions I saw would have been rated easy to medium on leetcode. Hard leetcode questions are a waste of time.</li>
+</ul>
+<h3 id="2-practice-interview-with-a-friend">2. Practice interview with a friend.</h3>
+<ul>
+<li>Pick someone you trust, preferably with interview experience.</li>
+<li>Coding while talking is very different from coding or talking.</li>
+</ul>
+<h3 id="3-allow-your-interviewer-to-guide-your-approach">3. Allow your interviewer to guide your approach.</h3>
+<ul>
+<li>Take a breather between explanations, let them interrupt you.</li>
+</ul>
+<h3 id="4-recursion">4. Recursion.</h3>
+<ul>
+<li>Recursion is one of the only tricks in the book. Learn it. Learn it well. This <a href="https://www.youtube.com/watch?v=oBt53YbR9Kk">youtube video</a> helped me a lot with recursion and dynamic programming. After a while, the patterns all start to look the same.</li>
+<li>Many of the most popular data structures use recursion. Linked lists, trees, graphs, etc.</li>
+</ul>
+<h3 id="5-reason-by-analogy">5. Reason by analogy.</h3>
+<ul>
+<li>Talk about similar problems that you’ve solved before. Tell your interviewer about how those problems are similar/different, tell them how you solved them. Time is short and even if you don’t solve the prompt perfectly, mentioning similar problems will get you partial credit.</li>
+<li>During my Amazon phone screen, I was struggling to come up with a solution, but as time was running out, realized that the problem was similar to “paint-fill,” a known interview question I had seen previously. I told them about the approach, and started coding. Even though I only wrote ~25% of the solution, they still moved me to the virtual onsite.</li>
+</ul>
+<h3 id="6-discuss-the-context-of-the-problem">6. Discuss the context of the problem.</h3>
+<ul>
+<li>Talk about how the interview prompt has impacts on actual problems. Being aware of the bigger picture is useful and lets the interviewer know that you’re more than a code monkey.</li>
+</ul>
+<h3 id="7-dynamic-programming-is-just-a-way-to-do-less-recursion">7. Dynamic programming is just a way to do less recursion.</h3>
+<ul>
+<li>More often than not, you won’t actually have to implement dynamic programming. Simply mentioning it and discussing the impact on runtime will usually suffice.</li>
+<li>In python, dynamic programming often means adding the @cache decorator to your function.</li>
+</ul>
+<h3 id="8-understand-the-requirements-early-and-reference-them-often">8. Understand the requirements early and reference them often.</h3>
+<ul>
+<li>Interview questions are ill-posed by design. Asking questions and figuring out the unstated requirements are important steps on the way to crafting a solution.</li>
+<li>It’s helpful to frame your decisions within the requirements of the prompt. Say something like: “I made this decision to address the requirement to XXX” or “doing this improves the storage requirement to O(N), since storage is our most important metric.”</li>
+<li>This lets your interviewer know you’re thinking about the requirements, gives them context, and lets them correct your understanding of the prompt if they think you’re not on the right course.</li>
+<li>Often, there is a “gotchas” hidden in the examples provided or edge cases that your interviewer wants you to find.</li>
+</ul>
+<h3 id="9-if-the-problem-involves-arrays-of-bits-theres-probably-a-trick-that-involves-casting-the-array-as-an-integer">9. If the problem involves “arrays of bits”, there’s probably a “trick” that involves casting the array as an integer.</h3>
+<ul>
+<li>You can then use the bit-wise operations and, or, xor, etc. operations for a factor of 32 improvement in efficiency.</li>
+</ul>
+<h3 id="10-if-the-problem-involves-a-searching-for-something-on-a-grid-there-is-often-a-trick-that-involves-representing-the-grid-as-a-graph">10. If the problem involves a searching for something on a grid, there is often a trick that involves representing the grid as a graph.</h3>
+<ul>
+<li>The problem can then be solved using a corresponding graph-search algorithm (e.g., breadth-first search or depth-first search.)</li>
+<li>See “paint-fill”, for example.</li>
+</ul>
+<h3 id="11-discussing-the-newer-features-of-the-language-and-when-they-were-introduced">11. Discussing the newer features of the language and when they were introduced.</h3>
+<ul>
+<li>Not strictly necessary, but this “trivia” this tells the interviewer that you pay attention to the modern developments in your language of choice.</li>
+<li>For me this was python typing. I could easily burn a minute discussing the capitalization of the “List” type hint (capitalized before 3.10).</li>
+<li>Which is something the interviewer probably didn’t know (good, or if they did, better), and gave me more time to think about my solution.</li>
+</ul>
+<h3 id="12-salary-negotiation-will-happen-regardless-if-youre-on-the-boat-or-underneath-it">12. Salary negotiation will happen regardless if you’re on the boat or underneath it.</h3>
+<ul>
+<li>Whether or not your interests are represented is up to you. If you’re fortunate to make it this far, your future salary is set by your negotiating acumen, not the wealth of skills and knowledge that you’ve accumulated to get to this point.</li>
+<li>Before you pass the interviews, your recruiter will ask you about your “expected compensation”. The correct answer is that you don’t have an “expected compensation”, that you’re more interested in “mutual-fit” and “scope of the responsibilities”. If you tell them a number, you lose. Had I given Google the number I had initially conceived, I would have missed out on hundreds of thousands of dollars. This is especially hard for scientists/engineers who are hard-wired to give numbers when asked. “oh! Numbers! I like those”.</li>
+<li>Negotiating is infinitely easier when you have competing offers. But it’s still difficult. I spent &gt;10 hours reading/learning negotiating theory after getting verbal offers.</li>
+<li>Recruiters can be VERY pushy. Be prepared to resist, write out prepared excuses/responses if necessary.</li>
+<li>Be prepared to feel like an ass. Recruiters will use your natural conflict-adversity against you.</li>
+<li>After you pass the interviews, they’ll ask you again for your expected compensation. You still don’t have to answer. If they keep pushing, you can answer, but make sure you don’t low-ball yourself. Do extensive research (levels.fyi, teamblind.com, etc.). Anchor the conversation high. I gave Google the highest L4 salary reported on levels.fyi as my expected compensation: $350K. Might have still been too low.</li>
+<li>And what do we say when our recruiters offer us 3X our current salary? Answer: It’s a start.</li>
+</ul>
+
+      </article>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-devincody-github-io-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://devincody.github.io/Blog/post/the_problem_with_diffraction/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://devincody.github.io/Blog/post/the_problem_with_diffraction/img/grating.JPG">
+      <img src="https://devincody.github.io/Blog/post/the_problem_with_diffraction/img/grating.JPG" class="card-img" alt="&#34;Diffraction&#34; - Some university physics class, probably">
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">The Problem with Diffraction Gratings</h2>
+    <p class="card-text">Why diffraction gratings are rather grating</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2021-09-26 926:00">Sep 26, 2021</time></p>
+      <p>#Optics #Physics </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://devincody.github.io/Blog/" class="card home-card" style="background-image: url( https://devincody.github.io/Blog/img/milkyway.webp )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://devincody.github.io/Blog/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>

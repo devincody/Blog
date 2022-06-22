@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://devincody.github.io/Blog/categories/3d-printing/</loc>
-    <lastmod>2021-09-26T00:31:49-07:00</lastmod>
+    <loc>https://devincody.github.io/Blog/categories/</loc>
+    <lastmod>2022-06-21T00:31:49-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://devincody.github.io/Blog/categories/</loc>
+    <loc>https://devincody.github.io/Blog/categories/coding/</loc>
+    <lastmod>2022-06-21T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/post/devins_bag_o_tricks/</loc>
+    <lastmod>2022-06-21T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/post/</loc>
+    <lastmod>2022-06-21T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/categories/software/</loc>
+    <lastmod>2022-06-21T00:31:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://devincody.github.io/Blog/categories/3d-printing/</loc>
     <lastmod>2021-09-26T00:31:49-07:00</lastmod>
   </url>
   
@@ -19,11 +39,6 @@
   
   <url>
     <loc>https://devincody.github.io/Blog/categories/physics/</loc>
-    <lastmod>2021-09-26T00:31:49-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://devincody.github.io/Blog/post/</loc>
     <lastmod>2021-09-26T00:31:49-07:00</lastmod>
   </url>
   
