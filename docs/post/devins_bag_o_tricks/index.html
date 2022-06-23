@@ -58,13 +58,14 @@
         </picture>
         
         <h2 id="introduction">Introduction:</h2>
-<p>The following 12 points are a combination of advice I got from other engineers and tricks that I learned while applying to L4-equivalent positions at Amazon and Google in January of 2022.</p>
+<p>The following 12 points are a combination of advice I got from other engineers and tricks that I learned while applying to <a href="https://candor.co/articles/tech-careers/google-promotions-the-real-scoop-on-leveling-up">L4-equivalent</a> positions at Amazon and Google in January of 2022.</p>
 <h2 id="the-list">The List:</h2>
 <h3 id="1-dont-grind-leetcode">1. Don’t grind Leetcode.</h3>
 <ul>
-<li>A good coding interview is a conversation. In interviews you should say 10-20 words for every word of code you write. Leetcode is the exact opposite. A good interview is about exploring the prompt from multiple angles, coming up with good ideas, discussing their merits, discussing the  options   within the context of what’s important to your interviewer. And finally, writing code.</li>
+<li>A good coding interview is a conversation. In interviews you should say 10-20 words for every word of code you write. <a href="https://leetcode.com/">Leetcode</a> is the exact opposite. A good interview is about exploring the prompt from multiple angles, coming up with good ideas, discussing their merits, discussing the options within the context of what’s important to your interviewer. And finally, writing code.</li>
 <li>Leetcode may be useful when you’re learning a topic for the first time and you want to make sure your solution is not totally wrong.</li>
 <li>Most interview questions I saw would have been rated easy to medium on leetcode. Hard leetcode questions are a waste of time.</li>
+<li>As an alternative to Leetcode, I recommend <a href="https://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a>, the gold standard for interview prep. I found the hints provided with the question allowed a more &ldquo;conversational&rdquo; approach, where the book would guide my approach.</li>
 </ul>
 <h3 id="2-practice-interview-with-a-friend">2. Practice interview with a friend.</h3>
 <ul>
@@ -77,53 +78,53 @@
 </ul>
 <h3 id="4-recursion">4. Recursion.</h3>
 <ul>
-<li>Recursion is one of the only tricks in the book. Learn it. Learn it well. This <a href="https://www.youtube.com/watch?v=oBt53YbR9Kk">youtube video</a> helped me a lot with recursion and dynamic programming. After a while, the patterns all start to look the same.</li>
+<li>Recursion is one of the only tricks in the book. Learn it. Learn it well. This <a href="https://www.youtube.com/watch?v=oBt53YbR9Kk">video</a> helped me a lot with recursion and dynamic programming. After a while, the patterns all start to look the same.</li>
 <li>Many of the most popular data structures use recursion. Linked lists, trees, graphs, etc.</li>
 </ul>
-<h3 id="5-reason-by-analogy">5. Reason by analogy.</h3>
+<h3 id="5-dynamic-programming-is-just-a-way-to-do-less-recursion">5. Dynamic programming is just a way to do less recursion.</h3>
+<ul>
+<li>More often than not, you won’t actually have to implement dynamic programming. Simply mentioning it and discussing the impact on runtime will usually suffice.</li>
+<li>In python, dynamic programming often means adding the <a href="https://docs.python.org/3/library/functools.html">@cache</a> decorator to your function.</li>
+</ul>
+<h3 id="6-reason-by-analogy">6. Reason by analogy.</h3>
 <ul>
 <li>Talk about similar problems that you’ve solved before. Tell your interviewer about how those problems are similar/different, tell them how you solved them. Time is short and even if you don’t solve the prompt perfectly, mentioning similar problems will get you partial credit.</li>
-<li>During my Amazon phone screen, I was struggling to come up with a solution, but as time was running out, realized that the problem was similar to “paint-fill,” a known interview question I had seen previously. I told them about the approach, and started coding. Even though I only wrote ~25% of the solution, they still moved me to the virtual onsite.</li>
+<li>During my Amazon phone screen, I was struggling to come up with a solution, but as time was running out, realized that the problem was similar to <a href="https://medium.com/@obiwankenoobi/interview-question-9-paint-bucket-22b54d4b75df">paint-fill</a>, a known interview question I had seen previously. I told them about the approach, and started coding. Even though I only wrote ~25% of the solution, they still moved me to the virtual onsite.</li>
 </ul>
-<h3 id="6-discuss-the-context-of-the-problem">6. Discuss the context of the problem.</h3>
+<h3 id="7-discuss-the-context-of-the-problem">7. Discuss the context of the problem.</h3>
 <ul>
 <li>Talk about how the interview prompt has impacts on actual problems. Being aware of the bigger picture is useful and lets the interviewer know that you’re more than a code monkey.</li>
 </ul>
-<h3 id="7-dynamic-programming-is-just-a-way-to-do-less-recursion">7. Dynamic programming is just a way to do less recursion.</h3>
-<ul>
-<li>More often than not, you won’t actually have to implement dynamic programming. Simply mentioning it and discussing the impact on runtime will usually suffice.</li>
-<li>In python, dynamic programming often means adding the @cache decorator to your function.</li>
-</ul>
 <h3 id="8-understand-the-requirements-early-and-reference-them-often">8. Understand the requirements early and reference them often.</h3>
 <ul>
-<li>Interview questions are ill-posed by design. Asking questions and figuring out the unstated requirements are important steps on the way to crafting a solution.</li>
+<li>Interview questions are often ill-posed by design. Asking questions and figuring out the unstated requirements are important steps on the way to crafting a solution.</li>
 <li>It’s helpful to frame your decisions within the requirements of the prompt. Say something like: “I made this decision to address the requirement to XXX” or “doing this improves the storage requirement to O(N), since storage is our most important metric.”</li>
 <li>This lets your interviewer know you’re thinking about the requirements, gives them context, and lets them correct your understanding of the prompt if they think you’re not on the right course.</li>
 <li>Often, there is a “gotchas” hidden in the examples provided or edge cases that your interviewer wants you to find.</li>
 </ul>
 <h3 id="9-if-the-problem-involves-arrays-of-bits-theres-probably-a-trick-that-involves-casting-the-array-as-an-integer">9. If the problem involves “arrays of bits”, there’s probably a “trick” that involves casting the array as an integer.</h3>
 <ul>
-<li>You can then use the bit-wise operations and, or, xor, etc. operations for a factor of 32 improvement in efficiency.</li>
+<li>You can then use the <a href="https://wiki.python.org/moin/BitwiseOperators">bit-wise operations</a> and, or, xor, etc. for a factor of 32 improvement in efficiency.</li>
 </ul>
 <h3 id="10-if-the-problem-involves-a-searching-for-something-on-a-grid-there-is-often-a-trick-that-involves-representing-the-grid-as-a-graph">10. If the problem involves a searching for something on a grid, there is often a trick that involves representing the grid as a graph.</h3>
 <ul>
 <li>The problem can then be solved using a corresponding graph-search algorithm (e.g., breadth-first search or depth-first search.)</li>
-<li>See “paint-fill”, for example.</li>
+<li>See <a href="https://medium.com/@obiwankenoobi/interview-question-9-paint-bucket-22b54d4b75df">paint-fill</a>, for example.</li>
 </ul>
 <h3 id="11-discussing-the-newer-features-of-the-language-and-when-they-were-introduced">11. Discussing the newer features of the language and when they were introduced.</h3>
 <ul>
 <li>Not strictly necessary, but this “trivia” this tells the interviewer that you pay attention to the modern developments in your language of choice.</li>
-<li>For me this was python typing. I could easily burn a minute discussing the capitalization of the “List” type hint (capitalized before 3.10).</li>
+<li>For me this was <a href="https://docs.python.org/3/library/typing.html">python typing</a>. I could easily burn a minute discussing the capitalization of the “List” type hint (<a href="https://docs.python.org/3/whatsnew/3.9.html#type-hinting-generics-in-standard-collections">capitalized before Python3.9</a>).</li>
 <li>Which is something the interviewer probably didn’t know (good, or if they did, better), and gave me more time to think about my solution.</li>
 </ul>
-<h3 id="12-salary-negotiation-will-happen-regardless-if-youre-on-the-boat-or-underneath-it">12. Salary negotiation will happen regardless if you’re on the boat or underneath it.</h3>
+<h3 id="12-negotiate-your-salary-do-it">12. Negotiate your Salary. Do it.</h3>
 <ul>
-<li>Whether or not your interests are represented is up to you. If you’re fortunate to make it this far, your future salary is set by your negotiating acumen, not the wealth of skills and knowledge that you’ve accumulated to get to this point.</li>
-<li>Before you pass the interviews, your recruiter will ask you about your “expected compensation”. The correct answer is that you don’t have an “expected compensation”, that you’re more interested in “mutual-fit” and “scope of the responsibilities”. If you tell them a number, you lose. Had I given Google the number I had initially conceived, I would have missed out on hundreds of thousands of dollars. This is especially hard for scientists/engineers who are hard-wired to give numbers when asked. “oh! Numbers! I like those”.</li>
-<li>Negotiating is infinitely easier when you have competing offers. But it’s still difficult. I spent &gt;10 hours reading/learning negotiating theory after getting verbal offers.</li>
+<li>If you’re fortunate to make it to the offer stage, your future salary is set by your negotiating acumen, not the wealth of skills and knowledge that you’ve accumulated to get to this point. Whether or not your interests are represented is up to you.</li>
+<li>Before you pass the interviews, your recruiter will ask you about your “expected compensation”. The correct answer is that you don’t have an “expected compensation”, that you’re more interested in “mutual-fit” and “scope of the responsibilities”. If you tell them a number, you lose. Had I given Google the number I had initially wanted, I would have missed out on almost $200K over 4 years. This is especially hard for scientists/engineers who are hard-wired to give numbers when asked. “Oh! Numbers! I like those”.</li>
+<li>After you pass the interviews, they’ll ask you again for your expected compensation. You still don’t have to answer. If they keep pushing, you can answer, but make sure you don’t low-ball yourself. Do extensive research (<a href="https://www.levels.fyi/">levels.fyi</a>, <a href="https://www.teamblind.com/">Blind</a>, etc.). Anchor the conversation high. I gave Google the <a href="https://www.levels.fyi/company/Google/salaries/Software-Engineer/L4/">highest L4 salary</a> reported on levels.fyi as my expected compensation: $350K. Might have still been too low.</li>
+<li>Negotiating is infinitely easier when you have competing offers. But it’s still difficult. I spent &gt;10 hours reading/learning <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/">negotiating tactics</a> after getting verbal offers.</li>
 <li>Recruiters can be VERY pushy. Be prepared to resist, write out prepared excuses/responses if necessary.</li>
 <li>Be prepared to feel like an ass. Recruiters will use your natural conflict-adversity against you.</li>
-<li>After you pass the interviews, they’ll ask you again for your expected compensation. You still don’t have to answer. If they keep pushing, you can answer, but make sure you don’t low-ball yourself. Do extensive research (levels.fyi, teamblind.com, etc.). Anchor the conversation high. I gave Google the highest L4 salary reported on levels.fyi as my expected compensation: $350K. Might have still been too low.</li>
 <li>And what do we say when our recruiters offer us 3X our current salary? Answer: It’s a start.</li>
 </ul>
 

@@ -25,6 +25,7 @@ The following 12 points are a combination of advice I got from other engineers a
 *	A good coding interview is a conversation. In interviews you should say 10-20 words for every word of code you write. [Leetcode](https://leetcode.com/) is the exact opposite. A good interview is about exploring the prompt from multiple angles, coming up with good ideas, discussing their merits, discussing the options within the context of what’s important to your interviewer. And finally, writing code.
 *	Leetcode may be useful when you’re learning a topic for the first time and you want to make sure your solution is not totally wrong.
 *	Most interview questions I saw would have been rated easy to medium on leetcode. Hard leetcode questions are a waste of time.
+* As an alternative to Leetcode, I recommend [Cracking the Coding Interview](https://www.crackingthecodinginterview.com/), the gold standard for interview prep. I found the hints provided with the question allowed a more "conversational" approach, where the book would guide my approach.
 ### 2. Practice interview with a friend.
 * Pick someone you trust, preferably with interview experience.
 * Coding while talking is very different from coding or talking.
