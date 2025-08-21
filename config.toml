@@ -9,7 +9,7 @@ math = true
 disqusShortname = "https-devincody-github-io-blog"
 publishDir = "docs"
 canonifyurls = true
-
+googleAnalytics = "G-YDQNJJN1GE"
 
 [params]
 brand = "The Blog"
